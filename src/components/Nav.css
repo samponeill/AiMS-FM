@@ -1,21 +1,22 @@
-.Nav {
-  background: white;
+.Nav--Wrapper {
+  background: var(--darkGrey);
   position: sticky;
   top: 0;
   z-index: 2;
-  border-bottom: 1px solid var(--lightGrey);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.025);
+  transition: background-color 1s ease;
 }
 
 .Nav--Container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   height: 6rem;
 }
 
 .Nav--Links {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   flex-direction: row;
 }
@@ -201,4 +202,35 @@
   from {
     opacity: 0;
   }
+}
+
+.Nav--Sentinel {
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  top: 0;
+}
+
+.Nav--Wrapper-fixed {
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  transition: background-color .25s ease-in,
+              box-shadow-color .25s ease-in;
+  background: var(--darkGrey);
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.025);
+}
+
+.Nav--Wrapper-inView {
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color .25s ease-out,
+              box-shadow-color .25s ease-out;
+}
+
+.Nav--Wrapper-inView .Nav--Container {
+  display: flex;
+  align-items: center;
+  height: 10rem;
 }

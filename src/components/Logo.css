@@ -3,8 +3,16 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  height: 4rem;
-  width: 4rem;
+  width: 210px;
+  height: 100px;
+  transform: scale(.6);
+  transform-origin: left;
   align-items: center;
   justify-content: center;
+  transition: transform .25s ease-out;
+}
+
+.Nav--Wrapper-inView .Logo {
+  transform: scale(1);
+  transition: transform .25s ease-in;
 }

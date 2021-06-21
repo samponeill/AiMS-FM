@@ -4,12 +4,20 @@ import { StaticQuery, graphql } from 'gatsby'
 import Meta from './Meta'
 import Nav from './Nav'
 import Footer from './Footer'
-import GithubCorner from './GithubCorner'
+import { Location } from '@reach/router'
+import { useInView } from 'react-intersection-observer';
 
 import 'modern-normalize/modern-normalize.css'
+import './Fonts.css'
 import './globalStyles.css'
 
 export default ({ children, meta, title }) => {
+
+  const { ref, inView } = useInView({
+    /* Optional options */
+    threshold: 0,
+  });
+
   return (
     <StaticQuery
       query={graphql`
@@ -57,8 +65,8 @@ export default ({ children, meta, title }) => {
               titleTemplate={`%s | ${siteTitle}`}
             >
               {title}
-              <link href="https://ucarecdn.com" rel="preconnect" crossorigin />
-              <link rel="dns-prefetch" href="https://ucarecdn.com" />
+              <link href="" rel="preconnect" crossorigin />
+              <link rel="dns-prefetch" href="" />
               {/* Add font link tags here */}
             </Helmet>
 
@@ -72,10 +80,10 @@ export default ({ children, meta, title }) => {
               {...meta}
               {...data.settingsYaml}
             />
+            
+            <div ref={ref} className="Nav--Sentinel"></div>
 
-            <GithubCorner url="https://github.com/thriveweb/yellowcake" />
-
-            <Nav subNav={subNav} />
+            <Nav inView={inView} subNav={subNav} />
 
             <Fragment>{children}</Fragment>
 
@@ -86,3 +94,5 @@ export default ({ children, meta, title }) => {
     />
   )
 }
+
+//If page is index, tell Nav to use sentinel 

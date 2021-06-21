@@ -10,7 +10,8 @@ export class Navigation extends Component {
   state = {
     active: false,
     activeSubNav: false,
-    currentPath: false
+    currentPath: false,
+    inView: this.props.inView
   }
 
   componentDidMount = () =>
@@ -58,74 +59,76 @@ export class Navigation extends Component {
       )
 
     return (
-      <nav className={`Nav ${active ? 'Nav-active' : ''}`}>
-        <div className="Nav--Container container">
-          <Link
-            to="/"
-            onClick={this.handleLinkClick}
-            onKeyDown={this.handleLinkKeyDown}
-            tabIndex={0}
-            aria-label="Navigation"
-            role="button"
-          >
-            <Logo />
-          </Link>
-          <div className="Nav--Links">
-            <NavLink to="/">Home</NavLink>
-            <NavLink to="/components/">Components</NavLink>
-            <div
-              className={`Nav--Group ${
-                this.state.activeSubNav === 'posts' ? 'active' : ''
-              }`}
+      <div className={`${this.props.location.pathname === '/' ? 'Nav--Wrapper-fixed' : 'Nav--Wrapper'}` + `${this.props.inView && this.props.location.pathname === '/' ? ' Nav--Wrapper-inView' : ''}`}>
+        <nav className={`Nav ${active ? 'Nav-active' : ''}`}>
+          <div className="Nav--Container container">
+            <Link
+              to="/"
+              onClick={this.handleLinkClick}
+              onKeyDown={this.handleLinkKeyDown}
+              tabIndex={0}
+              aria-label="Navigation"
+              role="button"
             >
-              <span
-                className={`NavLink Nav--GroupParent ${
-                  this.props.location.pathname.includes('posts') ||
-                  this.props.location.pathname.includes('blog') ||
-                  this.props.location.pathname.includes('post-categories')
-                    ? 'active'
-                    : ''
+              <Logo />
+            </Link>
+            <div className="Nav--Links">
+              <NavLink to="/">Home</NavLink>
+              <NavLink to="/components/">Components</NavLink>
+              <div
+                className={`Nav--Group ${
+                  this.state.activeSubNav === 'posts' ? 'active' : ''
                 }`}
-                onClick={() => this.toggleSubNav('posts')}
-                onKeyDown={e => this.keyToggleSubNav(e, 'posts')}
-                tabIndex={0}
-                aria-label="Navigation"
-                role="button"
               >
-                Blog
-                <div className="Nav--GroupLinks">
-                  <NavLink to="/blog/" className="Nav--GroupLink">
-                    All Posts
-                  </NavLink>
-                  {subNav.posts.map((link, index) => (
-                    <NavLink
-                      to={link.slug}
-                      key={'posts-subnav-link-' + index}
-                      className="Nav--GroupLink"
-                    >
-                      {link.title}
+                <span
+                  className={`NavLink Nav--GroupParent ${
+                    this.props.location.pathname.includes('posts') ||
+                    this.props.location.pathname.includes('blog') ||
+                    this.props.location.pathname.includes('post-categories')
+                      ? 'active'
+                      : ''
+                  }`}
+                  onClick={() => this.toggleSubNav('posts')}
+                  onKeyDown={e => this.keyToggleSubNav(e, 'posts')}
+                  tabIndex={0}
+                  aria-label="Navigation"
+                  role="button"
+                >
+                  Blog
+                  <div className="Nav--GroupLinks">
+                    <NavLink to="/blog/" className="Nav--GroupLink">
+                      All Posts
                     </NavLink>
-                  ))}
-                </div>
-              </span>
+                    {subNav.posts.map((link, index) => (
+                      <NavLink
+                        to={link.slug}
+                        key={'posts-subnav-link-' + index}
+                        className="Nav--GroupLink"
+                      >
+                        {link.title}
+                      </NavLink>
+                    ))}
+                  </div>
+                </span>
+              </div>
+              <NavLink to="/default/">Default</NavLink>
+              <NavLink to="/contact/">Contact</NavLink>
             </div>
-            <NavLink to="/default/">Default</NavLink>
-            <NavLink to="/contact/">Contact</NavLink>
+            <button
+              className="Button-blank Nav--MenuButton"
+              onClick={this.handleMenuToggle}
+              tabIndex={0}
+              aria-label="Navigation"
+            >
+              {active ? <X /> : <Menu />}
+            </button>
           </div>
-          <button
-            className="Button-blank Nav--MenuButton"
-            onClick={this.handleMenuToggle}
-            tabIndex={0}
-            aria-label="Navigation"
-          >
-            {active ? <X /> : <Menu />}
-          </button>
-        </div>
-      </nav>
+        </nav>
+      </div>
     )
   }
 }
 
-export default ({ subNav }) => (
-  <Location>{route => <Navigation subNav={subNav} {...route} />}</Location>
+export default ({ subNav, ref, inView }) => (
+  <Location>{route => <Navigation inView={inView} subNav={subNav} {...route} />}</Location>
 )
