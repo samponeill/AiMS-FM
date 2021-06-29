@@ -1,9 +1,9 @@
 ---
 template: HomePage
 slug: ''
-title: Yellowcake
-featuredImage: 'https://ucarecdn.com/159203d3-881d-4218-baa1-ca4427b48d0d/'
-subtitle: ' Welcome to the ultimate Gatsby and Netlify starter project.'
+title: Industry Leading Facilities Management Software
+featuredImage: 'https://ucarecdn.com/c362daee-e90b-4c90-ae6f-a302d889874a/-progressive/yes/-/format/auto/-/resize/2000x/'
+subtitle: 'Fully customisable, cloud-based CAFM software for your property management system.  Get a real-time overview of all maintenance work and associated costs, boost contractor response times and reduce risk with our automated compliance systems'
 meta:
   description: This is a meta description.
   title: The Ultimate Gatsby Starter
