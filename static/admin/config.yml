@@ -3,6 +3,8 @@ backend:
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
 
+local_backend: true
+
 # display_url: https://gatsbro.netlify.com # This url will display in the top-right of the CMS
 media_library:
   name: uploadcare
@@ -207,6 +209,15 @@ collections: # A list of collections the CMS should be able to edit
           - { label: Slug, name: slug, widget: hidden, default: '' }
           - { label: Title, name: title, widget: string }
           - { label: Featured Image, name: featuredImage, widget: image }
+          - { label: Button, 
+              name: button,
+              widget: object,
+              summary: '{{fields.text}}',
+              fields:
+              - { label: Text, name: text, widget: text, required: true }
+              - { label: Link, name: link, widget: text, required: false }
+              - { label: Action, name: action, widget: code, required: false }
+            }
           - { label: Subtitle, name: subtitle, widget: markdown, required: false }
           - { label: Body, name: body, widget: markdown }
           - label: 'Accordion'
