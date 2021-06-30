@@ -227,16 +227,16 @@ collections: # A list of collections the CMS should be able to edit
                   widget: code,
                   required: false,
                 }
-          - label: 'Link'
+          - label: 'Brochure'
             required: false
-            name: 'link'
+            name: 'brochure'
             widget: 'object'
             fields:
               - { label: Text, name: text, widget: string, required: true }
               - {
-                  label: Link,
-                  name: link,
-                  widget: text,
+                  label: File,
+                  name: file,
+                  widget: 'file',
                   required: false,
                 }
           - { label: Body, name: body, widget: markdown }
