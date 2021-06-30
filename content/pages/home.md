@@ -1,12 +1,19 @@
 ---
 template: HomePage
-slug: ''
+slug: ""
 title: Industry Leading Facilities Management Software
-featuredImage: 'https://ucarecdn.com/c362daee-e90b-4c90-ae6f-a302d889874a/-progressive/yes/-/format/auto/-/resize/2000x/'
-subtitle: 'Fully customisable, cloud-based CAFM software for your property management system.  Get a real-time overview of all maintenance work and associated costs, boost contractor response times and reduce risk with our automated compliance systems'
+featuredImage: https://ucarecdn.com/3873667e-cc55-4fcf-86ee-dda2991264ba/
+button:
+  text: Book a demo
+brochure:
+  text: Download brochure
 meta:
   description: This is a meta description.
   title: The Ultimate Gatsby Starter
+subtitle: Fully customisable, cloud-based CAFM software for your property
+  management system.  Get a real-time overview of all maintenance work and
+  associated costs, boost contractor response times and reduce risk with our
+  automated compliance systems
 ---
 
 Yellowcake is an opinionated starter project created by [Thrive Digital](https://thriveweb.com.au/) a [Gold Coast Web Design](https://thriveweb.com.au/) studio. to help you create lightning fast websites with [Gatsby](https://gatsbyjs.org) and [Netlify CMS](https://netlifycms.org).
