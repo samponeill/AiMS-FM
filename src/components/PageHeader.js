@@ -2,12 +2,15 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import Image from './Image'
+import Button from './Button'
 import Content from './Content'
 import './PageHeader.css'
 
 const PageHeader = ({
   title,
   subtitle,
+  button,
+  brochure,
   backgroundImage,
   large,
   className = ''
@@ -29,6 +32,7 @@ const PageHeader = ({
         {subtitle && (
           <Content className="PageHeader--Subtitle" src={subtitle} />
         )}
+        <Button data={button} />
       </div>
     </div>
   )

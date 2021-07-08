@@ -7,13 +7,16 @@ import Layout from '../components/Layout'
 import Button from '../components/Button'
 
 // Export Template for use in CMS preview
-export const HomePageTemplate = ({ title, subtitle, featuredImage, body }) => (
+export const HomePageTemplate = ({ title, subtitle, link, text, action, featuredImage, body }) => (
   <main className="Home">
     <PageHeader
       large
       title={title}
       subtitle={subtitle}
       backgroundImage={featuredImage}
+      linkText={text}
+      link={link}
+      action={action}
     />
 
     <section className="section">
@@ -47,6 +50,13 @@ export const pageQuery = graphql`
         title
         subtitle
         featuredImage
+        button {
+          text
+          link
+        }
+        brochure {
+          text
+        }
       }
     }
   }

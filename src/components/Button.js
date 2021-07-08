@@ -5,9 +5,8 @@ import './Button.css'
 class Button extends Component {
 
   render() {
-      const { children } = this.props;
     return (
-        <button>{children}</button>
+        <a className="button--primary" href="" log={console.log(this.props.children)}>{this.props.children}</a>
     )
   }
 }

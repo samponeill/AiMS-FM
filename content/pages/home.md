@@ -5,8 +5,11 @@ title: Industry Leading Facilities Management Software
 featuredImage: https://ucarecdn.com/3873667e-cc55-4fcf-86ee-dda2991264ba/
 button:
   text: Book a demo
+  link: /#
+  action: ""
 brochure:
   text: Download brochure
+  link: /#
 meta:
   description: This is a meta description.
   title: The Ultimate Gatsby Starter
