@@ -3,8 +3,10 @@ import { Location } from '@reach/router'
 import { Link } from 'gatsby'
 import { Menu, X } from 'react-feather'
 import Logo from './Logo'
+import Button from './Button'
 
 import './Nav.css'
+import './Button.css'
 
 export class Navigation extends Component {
   state = {
@@ -73,8 +75,8 @@ export class Navigation extends Component {
               <Logo />
             </Link>
             <div className="Nav--Links">
-              <NavLink to="/">Home</NavLink>
-              <NavLink to="/components/">Pricing</NavLink>
+              <NavLink className="NavLink" to="/">Home</NavLink>
+              <NavLink className="NavLink" to="/components/">Pricing</NavLink>
               <div
                 className={`Nav--Group ${
                   this.state.activeSubNav === 'posts' ? 'active' : ''
@@ -103,7 +105,7 @@ export class Navigation extends Component {
                       <NavLink
                         to={link.slug}
                         key={'posts-subnav-link-' + index}
-                        className="Nav--GroupLink"
+                        className="Nav--GroupLink NavLink"
                       >
                         {link.title}
                       </NavLink>
@@ -111,8 +113,8 @@ export class Navigation extends Component {
                   </div>
                 </span>
               </div>
-              <NavLink to="/default/">Your sector</NavLink>
-              <NavLink to="/contact/">Contact</NavLink>
+              <NavLink className="NavLink" to="/default/">Your sector</NavLink>
+              <NavLink className="button button--primary" to="/contact/">Book a demo</NavLink>
             </div>
             <button
               className="Button-blank Nav--MenuButton"

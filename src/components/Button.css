@@ -1,0 +1,19 @@
+.button {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+    padding: .75rem 2.5rem;
+    text-decoration: unset;
+    transition: box-shadow .25s;
+}
+
+.button:hover {
+    box-shadow: 0 0 0 var(--primary);
+}
+
+.button--primary {
+    background-color: var(--primary);
+    color: black;
+    box-shadow: 0 0 12px var(--primary);
+}

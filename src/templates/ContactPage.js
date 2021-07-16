@@ -84,6 +84,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
+        slug
         template
         subtitle
         featuredImage

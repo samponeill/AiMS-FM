@@ -88,6 +88,7 @@ export const pageQuery = graphql`
       ...Gallery
       html
       frontmatter {
+        slug
         title
         template
         subtitle

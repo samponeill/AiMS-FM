@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 
 import Image from './Image'
 import Button from './Button'
+import Link from './Link'
 import Content from './Content'
 import './PageHeader.css'
 
@@ -32,7 +33,12 @@ const PageHeader = ({
         {subtitle && (
           <Content className="PageHeader--Subtitle" src={subtitle} />
         )}
-        <Button data={button} />
+        {button ? 
+        <Button type="button" data={button} />
+        : ""}
+        {brochure ? 
+        <Link type="link" data={brochure} />
+        : ""}
       </div>
     </div>
   )
