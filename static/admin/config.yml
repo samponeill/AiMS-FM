@@ -239,6 +239,16 @@ collections: # A list of collections the CMS should be able to edit
                   widget: 'file',
                   required: false,
                 }
+          - label: 'Buckets'
+            name: 'buckets'
+            widget: 'list'
+            required: false
+            fields:
+              - { label: 'Heading', name: 'heading', widget: 'string' }
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: Image, name: image, widget: image }
+              - { label: Content, name: content, widget: text }
+              - { label: Link, name: link, widget: text }
           - { label: Body, name: body, widget: markdown }
           - label: 'Accordion'
             name: 'accordion'
