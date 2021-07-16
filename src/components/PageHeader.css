@@ -17,13 +17,16 @@
 
 .PageHeader--Title {
   font-size: 4rem;
-  margin-bottom: 0;
+  margin-bottom: 3rem;
   max-width: 50%;
+  line-height: 1.2;
 }
 
 .PageHeader--Subtitle {
+  margin-bottom: 5rem;
   font-weight: 400;
   font-size: 1.8rem;
+  max-width: 50%;
 }
 
 .PageHeader .container {

@@ -243,6 +243,8 @@ collections: # A list of collections the CMS should be able to edit
             name: 'buckets'
             widget: 'list'
             required: false
+            min: 3
+            max: 3
             fields:
               - { label: 'Heading', name: 'heading', widget: 'string' }
               - { label: 'Title', name: 'title', widget: 'string' }
