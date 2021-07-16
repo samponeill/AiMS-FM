@@ -33,12 +33,14 @@ const PageHeader = ({
         {subtitle && (
           <Content className="PageHeader--Subtitle" src={subtitle} />
         )}
-        {button ? 
-        <Button type="button" data={button} />
-        : ""}
-        {brochure ? 
-        <Link type="link" data={brochure} />
-        : ""}
+        <div className="PageHeader--Buttonwrap">
+          {button ? 
+          <Button type="button" data={button} />
+          : ""}
+          {brochure ? 
+          <Link type="link" data={brochure} />
+          : ""}
+        </div>
       </div>
     </div>
   )

@@ -48,6 +48,7 @@ body {
 
 a {
   color: var(--primary);
+  font-weight: 800;
 }
 
 strong {
