@@ -8,6 +8,20 @@ button:
   link: "#"
 brochure:
   text: Download brochure
+bucketsHeading: "Easy-to-use CAFM software for:"
+buckets:
+  - heading: Facilities management companies
+    linkText: Find out more »
+    image: https://ucarecdn.com/bc1cac32-6441-453a-ab5e-33503e1357e5/
+    link: /contact/
+  - heading: Maintenance industry providers
+    linkText: Find out more »
+    image: https://ucarecdn.com/7881d8f1-0969-4c6d-b229-508d9ab355d2/-/crop/1681x1632/768,0/-/preview/
+    link: /contact/
+  - heading: Property Landlords
+    linkText: Find out more »
+    image: https://ucarecdn.com/ca2fcec0-49fe-44f3-bd1d-45e7c4852a40/
+    link: /contact/
 meta:
   description: This is a meta description.
   title: The Ultimate Gatsby Starter
