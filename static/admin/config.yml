@@ -249,7 +249,7 @@ collections: # A list of collections the CMS should be able to edit
             fields:
               - { label: 'Heading', name: 'heading', widget: 'string' }
               - { label: Image, name: image, widget: image }
-              - { label: Content, name: content, widget: text }
+              - { label: Link text, name: linkText, widget: 'string' }
               - { label: Link, name: link, widget: 'string' }
           - { label: Body, name: body, widget: markdown }
           - label: 'Accordion'
