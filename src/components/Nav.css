@@ -16,13 +16,19 @@
 
 .Nav--Links {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
   flex-direction: row;
+  text-align: center;
 }
 
 .Nav--Links > * + * {
   margin-left: 1rem;
+}
+
+.Nav--Linkswrapper {
+  display: flex;
+  justify-content: center;
 }
 
 .Nav .Logo {
@@ -35,24 +41,42 @@
 }
 
 .NavLink {
-  padding: .75rem 2.5rem;
+  padding: 1vh 1vw;
   display: block;
   font-weight: 500;
-  transition: color 0.2s, border-bottom-color 0.2s;
   text-decoration: none;
-  border-bottom: 2px solid;
-  border-bottom-color: transparent;
+  color: white;
+}
+
+.NavLink::after {
+  content: '';
+  display: block;
+  width: 2rem;
+  height: 2px;
+  border-radius: 10px;
+  background-color: transparent;
+  transition: background-color 0.5s ease;
+  margin: auto;
+}
+
+.NavLink.active::after {
+  background-color: var(--primary);
+}
+
+.NavLink__strong {
+  font-weight: 900;
 }
 
 .NavLink:hover,
 .NavLink.active,
 .NavLink:focus {
-  border-bottom-color: currentColor;
+  border-bottom-color: var(--primary);
 }
 
 .NavLink.button {
   border-bottom: unset;
   transition: box-shadow .25s;
+  color: black;
 }
 
 .Nav--Group {
@@ -117,6 +141,7 @@
     display: block !important;
     margin-left: auto;
     z-index: 1;
+    color: white;
   }
   .Nav .Logo {
     z-index: 1;
@@ -175,9 +200,6 @@
   }
   .Nav .NavLink:nth-of-type(8) {
     animation-delay: 0.7s;
-  }
-  .Nav .NavLink:nth-of-type(7) {
-    animation-delay: 0.6s;
   }
 
   .Nav--GroupLinks {
@@ -238,3 +260,4 @@
   align-items: center;
   height: 10rem;
 }
+

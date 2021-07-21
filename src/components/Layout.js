@@ -14,7 +14,6 @@ import './globalStyles.css'
 export default ({ children, meta, title }) => {
 
   const { ref, inView } = useInView({
-    /* Optional options */
     threshold: 0,
   });
 

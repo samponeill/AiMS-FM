@@ -189,10 +189,10 @@ blockquote {
 }
 
 .container {
-  max-width: 1111px;
-  width: 90%;
+  max-width: 90vw;
   margin: 0 auto;
 }
+
 .container.skinny {
   max-width: 888px;
 }
@@ -236,4 +236,20 @@ blockquote {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.fab-four {
+  --threshold: 600px;
+  --gap: 1rem;
+  --items: 3;
+  --gap-spacing: calc(var(--gap) * (var(--items) - 1));
+  display: flex;
+  flex-flow: row wrap;
+  gap: var(--gap);
+}
+
+.fab-four > * {
+  min-width: calc((100% - var(--gap-spacing)) / var(--items));
+  max-width: 100%;
+  width: calc((var(--threshold) - 100%) * 100000);
 }

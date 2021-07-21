@@ -29,17 +29,19 @@ const PageHeader = ({
         />
       )}
       <div className="container relative">
-        <h1 className="PageHeader--Title">{title}</h1>
-        {subtitle && (
-          <Content className="PageHeader--Subtitle" src={subtitle} />
-        )}
-        <div className="PageHeader--Buttonwrap">
-          {button ? 
-          <Button type="button" data={button} />
-          : ""}
-          {brochure ? 
-          <Link type="link" data={brochure} />
-          : ""}
+        <div className="PaheHeader--Headercontainer">
+          <h1 className="PageHeader--Title">{title}</h1>
+          {subtitle && (
+            <Content className="PageHeader--Subtitle" src={subtitle} />
+          )}
+          <div className="PageHeader--Buttonwrap">
+            {button ? 
+            <Button type="button" data={button} />
+            : ""}
+            {brochure ? 
+            <Link type="link" data={brochure} />
+            : ""}
+          </div>
         </div>
       </div>
     </div>

@@ -7,7 +7,7 @@ import Layout from '../components/Layout'
 import Button from '../components/Button'
 
 // Export Template for use in CMS preview
-export const HomePageTemplate = ({ title, subtitle, button, brochure, featuredImage, body }) => (
+export const HomePageTemplate = ({ title, subtitle, button, brochure, featuredImage, bucketsHeading, buckets, body }) => (
   <main className="Home">
     <PageHeader
       large
@@ -16,6 +16,8 @@ export const HomePageTemplate = ({ title, subtitle, button, brochure, featuredIm
       backgroundImage={featuredImage}
       button={button}
       brochure={brochure}
+      bucketsHeading={bucketsHeading}
+      buckets={buckets}
     />
 
     <section className="section">
@@ -44,6 +46,7 @@ export const pageQuery = graphql`
     page: markdownRemark(id: { eq: $id }) {
       ...Meta
       html
+
       frontmatter {
         slug
         title
@@ -55,6 +58,13 @@ export const pageQuery = graphql`
         }
         brochure {
           text
+        }
+        bucketsHeading
+        buckets {
+          heading
+          linkText
+          image
+          link
         }
       }
     }
