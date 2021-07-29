@@ -8,12 +8,12 @@
   border-bottom-color: transparent;
 }
 
-.NavLink + .NavLink {
-  margin-left: 1rem;
-}
-
 .NavLink:hover,
 .NavLink.active,
 .NavLink:focus {
   border-bottom-color: currentColor;
+}
+
+.Logo--Link {
+  height: inherit;
 }

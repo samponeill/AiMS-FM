@@ -39,7 +39,7 @@ body {
   position: relative;
   background: var(--darkGrey);
   color: var(--secondary);
-  font-size: 1.6em;
+  font-size: clamp(1rem, 1.5rem, 2vh);
   font-weight: 400;
   letter-spacing: 0.01em;
   line-height: 1.6;
@@ -217,16 +217,19 @@ blockquote {
   cursor: pointer;
   border-radius: var(--borderRadius);
 }
+
 .Button:hover,
 .Button:focus {
   opacity: 0.95;
   outline: none;
 }
+
 .Button[disabled] {
   opacity: 0.4;
   pointer-events: none;
   cursor: progress;
 }
+
 .Button-blank {
   appearance: none;
   background: none;
@@ -239,17 +242,29 @@ blockquote {
 }
 
 .fab-four {
-  --threshold: 600px;
-  --gap: 1rem;
-  --items: 3;
+  --gap: 0;
+  --items: 2;
   --gap-spacing: calc(var(--gap) * (var(--items) - 1));
   display: flex;
   flex-flow: row wrap;
   gap: var(--gap);
+  align-items: center;
+}
+
+.fab-four__links {
+  --threshold: 600px;
+}
+
+/* .fab-four__links > *:last-child {
+  min-height: 8vh;
+} */
+
+.fab-four__nav {
+  --threshold: 600px;
 }
 
 .fab-four > * {
   min-width: calc((100% - var(--gap-spacing)) / var(--items));
   max-width: 100%;
-  width: calc((var(--threshold) - 100%) * 100000);
+  align-items: center;
 }

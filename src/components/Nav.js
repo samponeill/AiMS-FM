@@ -3,7 +3,6 @@ import { Location } from '@reach/router'
 import { Link } from 'gatsby'
 import { Menu, X } from 'react-feather'
 import Logo from './Logo'
-import Button from './Button'
 
 import './Nav.css'
 import './Button.css'
@@ -63,7 +62,7 @@ export class Navigation extends Component {
     return (
       <div className={`${this.props.location.pathname === '/' ? 'Nav--Wrapper-fixed' : 'Nav--Wrapper'}` + `${this.props.inView && this.props.location.pathname === '/' && window.innerWidth >= 900 ? ' Nav--Wrapper-inView' : ''}`}>
         <nav className={`Nav ${active ? 'Nav-active' : ''}`}>
-          <div className="Nav--Container container">
+          <div className="Nav--Container container fab-four fab-four__nav">
             <Link
               to="/"
               onClick={this.handleLinkClick}
@@ -71,20 +70,22 @@ export class Navigation extends Component {
               tabIndex={0}
               aria-label="Navigation"
               role="button"
-              className="fab-four"
+              className="Logo--Link"
             >
               <Logo />
             </Link>
-            <div className="Nav--Links fab-four">
-              <NavLink className="NavLink" to="/">Home</NavLink>
-              <NavLink className="NavLink" to="/components/">Pricing</NavLink>
-              <NavLink className="NavLink" to="/default/">Your sector</NavLink>
-              <NavLink className="NavLink" to="/about/">About us</NavLink>
-            </div>
-            <div className="Nav--Links fab-four">
-              <NavLink className="NavLink__strong" to="/contact/">Login</NavLink>
-              <NavLink className="button button--primary" to="/contact/">Book a demo</NavLink>
-            </div>
+            <div className="fab-four fab-four__links">
+              <div className="Nav--Links">
+                <NavLink className="NavLink" to="/">Home</NavLink>
+                <NavLink className="NavLink" to="/components/">Pricing</NavLink>
+                <NavLink className="NavLink" to="/default/">Your sector</NavLink>
+                <NavLink className="NavLink" to="/about/">About us</NavLink>
+              </div>
+              <div className="Nav--Links">
+                <NavLink className="NavLink__strong" to="/contact/">Login</NavLink>
+                <NavLink className="button button--primary" to="/contact/">Book a demo</NavLink>
+              </div>
+            </div>            
             <button
               className="Button-blank Nav--MenuButton"
               onClick={this.handleMenuToggle}

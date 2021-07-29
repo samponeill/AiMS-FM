@@ -3,16 +3,21 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  width: 210px;
-  height: 100px;
-  transform: scale(.6);
+  transform: scale(.5);
   transform-origin: left;
   align-items: center;
   justify-content: center;
   transition: transform .25s ease-out;
+  height: inherit;
+  max-height: 10vh;
 }
 
 .Nav--Wrapper-inView .Logo {
-  transform: scale(1);
+  transform: scale(.8);
   transition: transform .25s ease-in;
+}
+
+.Logo--Link {
+  height: inherit;
+  overflow: hidden;
 }

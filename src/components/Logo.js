@@ -1,11 +1,10 @@
 import React from 'react'
+import Image from './Image'
 import './Logo.css'
 
 export default () => (
-  <div
+  <Image
     className="Logo"
-    style={{
-      backgroundImage: `url(/images/AIMS_FacilitiesManagement_Logo_White.png)`
-    }}
+    src={`/images/AIMS_FacilitiesManagement_Logo_White.png`}
   />
 )
