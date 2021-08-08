@@ -3,3 +3,9 @@
     border-bottom: 3px solid var(--primary);
     text-decoration: unset;
 }
+
+.button--link__primary {
+    color: var(--darkGrey);
+    border-bottom: 3px solid var(--primary);
+    text-decoration: unset;
+}

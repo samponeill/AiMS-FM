@@ -7,7 +7,7 @@
   --danger: #ff3d3d;
   --font-system: 'poppins', 'Open Sans', sans-serif;
   /* --font-system: system-ui;  */
-  --borderRadius: 3px;
+  --borderRadius: 10px;
 }
 
 ::-webkit-scrollbar {
@@ -242,8 +242,6 @@ blockquote {
 }
 
 .fab-four {
-  --gap: 0;
-  --items: 2;
   --gap-spacing: calc(var(--gap) * (var(--items) - 1));
   display: flex;
   flex-flow: row wrap;
@@ -252,6 +250,8 @@ blockquote {
 }
 
 .fab-four__links {
+  --gap: 0;
+  --items: 2;
   --threshold: 600px;
 }
 
@@ -260,11 +260,23 @@ blockquote {
 } */
 
 .fab-four__nav {
+  --gap: 0;
+  --items: 2;
   --threshold: 600px;
+}
+
+.fab-four__buckets {
+  --gap: 1rem;
+  --items: 4;
+  --threshold: 940px;
 }
 
 .fab-four > * {
   min-width: calc((100% - var(--gap-spacing)) / var(--items));
   max-width: 100%;
   align-items: center;
+}
+
+.fab-four__buckets > * {
+  width: calc((var(--threshold) - 100%) * 100000);
 }

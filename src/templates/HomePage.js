@@ -1,10 +1,9 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-
 import PageHeader from '../components/PageHeader'
 import Content from '../components/Content'
 import Layout from '../components/Layout'
-import Button from '../components/Button'
+import Buckets from '../components/Buckets'
 
 // Export Template for use in CMS preview
 export const HomePageTemplate = ({ title, subtitle, button, brochure, featuredImage, bucketsHeading, buckets, body }) => (
@@ -19,7 +18,11 @@ export const HomePageTemplate = ({ title, subtitle, button, brochure, featuredIm
       bucketsHeading={bucketsHeading}
       buckets={buckets}
     />
-
+    <section className="section">
+      <div className="container">
+        <Buckets source={buckets} />
+      </div>
+    </section>
     <section className="section">
       <div className="container">
         <Content source={body} />

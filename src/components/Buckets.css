@@ -1,20 +1,40 @@
-.button {
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: center;
-    border-radius: 20px;
-    padding: .75rem 2.5rem;
-    text-decoration: unset;
-    transition: box-shadow .25s;
-    font-weight: 400;
+.Buckets {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* see notes below */
+    grid-gap: 1rem;
 }
 
-.button:hover {
-    box-shadow: 0 0 0 var(--primary);
+.Buckets--item {
+    background: white;
+    color: var(--darkGrey);
+    overflow: hidden;
+    display: block;
+    position: relative;
+    border-radius: var(--borderRadius);
 }
 
-.button--primary {
-    background-color: var(--primary);
-    color: black;
-    box-shadow: 0 0 12px var(--primary);
+.Buckets--image {
+    position: relative;
+    width: 100%;
+    height: 25rem;
+    overflow: hidden;
 }
+
+.Buckets--image img {
+    display: block;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.Buckets--text {
+    display: grid;
+    align-items: stretch;
+    grid-template-rows: repeat(auto-fill, minmax(10rem, 1fr)); /* see notes below */
+    padding: 2rem;
+}
+
+.Buckets--heading {}
+
+.Buckets--desc {}

@@ -106,7 +106,7 @@ class Image extends React.Component {
         {isUploadcare && lazy && (
           <Observer onChange={this.handleIntersection}>
             <div
-              className="BackgroundImage"
+              className={`BackgroundImage ${this.props.className}`}
               ref={this.ref}
               style={{
                 backgroundImage: `url(${smallSrc})`,
