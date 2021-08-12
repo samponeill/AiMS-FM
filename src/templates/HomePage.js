@@ -5,7 +5,7 @@ import Content from '../components/Content'
 import Layout from '../components/Layout'
 import Buckets from '../components/Buckets'
 import Image from '../components/Image'
-import USP from '../components/usp'
+import USP from '../components/Usp'
 
 // Export Template for use in CMS preview
 export const HomePageTemplate = ({ title, subtitle, button, brochure, featuredImage, bucketsHeading, buckets, body }) => (

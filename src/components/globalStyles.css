@@ -320,3 +320,18 @@ button.button--primary {
   color: black;
   box-shadow: 0 0 12px var(--primary);
 }
+
+ul {
+  padding-left: unset;
+  list-style: none;
+}
+
+li {
+  margin-bottom: 1.5rem;
+}
+
+address {
+  font-style: unset;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+}
