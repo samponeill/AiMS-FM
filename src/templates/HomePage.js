@@ -4,6 +4,8 @@ import PageHeader from '../components/PageHeader'
 import Content from '../components/Content'
 import Layout from '../components/Layout'
 import Buckets from '../components/Buckets'
+import Image from '../components/Image'
+import USP from '../components/usp'
 
 // Export Template for use in CMS preview
 export const HomePageTemplate = ({ title, subtitle, button, brochure, featuredImage, bucketsHeading, buckets, body }) => (
@@ -23,11 +25,12 @@ export const HomePageTemplate = ({ title, subtitle, button, brochure, featuredIm
         <Buckets source={buckets} />
       </div>
     </section>
-    <section className="section">
+    {/* <section className="section">
       <div className="container">
         <Content source={body} />
       </div>
-    </section>
+    </section> */}
+    <USP></USP>
   </main>
 )
 

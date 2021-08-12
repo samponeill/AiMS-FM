@@ -77,7 +77,7 @@ export class Navigation extends Component {
             <div className="fab-four fab-four__links">
               <div className="Nav--Links">
                 <NavLink className="NavLink" to="/">Home</NavLink>
-                <NavLink className="NavLink" to="/components/">Pricing</NavLink>
+                <NavLink className="NavLink" to="/pricing/">Pricing</NavLink>
                 <NavLink className="NavLink" to="/default/">Your sector</NavLink>
                 <NavLink className="NavLink" to="/about/">About us</NavLink>
               </div>

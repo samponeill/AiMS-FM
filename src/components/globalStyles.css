@@ -1,6 +1,7 @@
 :root {
   --primary: #05f2db;
   --secondary: #fff;
+  --highlight: #278e6b;
   --lightGrey: whitesmoke;
   --midGrey: #cacaca;
   --darkGrey: #0d0d0d;
@@ -279,4 +280,43 @@ blockquote {
 
 .fab-four__buckets > * {
   width: calc((var(--threshold) - 100%) * 100000);
+}
+
+.highlight {
+  margin-bottom: 2.5rem;
+}
+
+.highlight:after {
+  content: '';
+  display: block;
+  width: 2.5rem;
+  height: 5px;
+  border-radius: 10px;
+  background-color: var(--highlight);
+  -webkit-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+  margin: auto;
+  margin-top: 0.5rem;
+  position: absolute;
+  left: 0;
+}
+
+button {
+  border-radius: 20px;
+  padding: 1.5rem 2.5rem;
+  text-decoration: unset;
+  transition: box-shadow .25s;
+  font-weight: 400;
+  text-align: center;
+  border: unset;
+}
+
+button:hover {
+  box-shadow: 0 0 0 var(--primary);
+}
+
+button.button--primary {
+  background-color: var(--primary);
+  color: black;
+  box-shadow: 0 0 12px var(--primary);
 }

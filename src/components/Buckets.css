@@ -38,3 +38,35 @@
 .Buckets--heading {}
 
 .Buckets--desc {}
+
+.Buckets--form {
+    display: grid;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    grid-template-rows: repeat(auto-fill, minmax(10rem, 1fr));
+    padding: 2rem 2rem .5rem 2rem;
+}
+
+.Buckets--form p {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.Buckets--button-wrapper {
+    margin: 0 auto;
+}
+
+.Buckets--form label {
+
+}
+
+.Buckets--form input {
+    padding: 1rem;
+}
+
+.Buckets--form textarea {
+    padding: 1rem;
+    height: 100%;
+}
