@@ -40,13 +40,20 @@ module.exports = {
       }
     },
     {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: `${__dirname}/static/images`,
+        }
+      }
+    },    
+    {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/content`,
         name: 'pages'
       }
     },
-
     // images
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',

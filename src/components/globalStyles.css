@@ -301,6 +301,11 @@ blockquote {
   left: 0;
 }
 
+.hightlight--center:after {
+  transform: translateX(-50%);
+  left: 50%;
+}
+
 button {
   border-radius: 20px;
   padding: 1.5rem 2.5rem;

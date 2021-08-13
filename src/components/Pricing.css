@@ -1,0 +1,85 @@
+.Pricing {
+    background: white;
+    color: var(--darkGrey);
+}
+
+.Pricing h1 {
+    position: relative;
+    text-align: center;
+    padding-top: 10vw;
+}
+
+.Pricing table {
+    width: 100%;
+    table-layout: fixed;
+    border: none;
+}
+
+.Pricing tr {
+    transition: background-color .5s ease, color .5s ease;
+}
+
+.Pricing tr:first-of-type {
+    height: 8rem;
+}
+
+.Pricing th {
+    font-size: 2rem;
+}
+
+.Pricing th:first-of-type {
+    text-align: center;
+}
+
+.Pricing th div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.Pricing th span {
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Pricing th svg {
+    max-height: 5rem;
+}
+
+.Pricing tr td svg {
+    height: 2.5rem;
+    padding-top: .5rem;
+}
+
+.Pricing tr td svg path {
+    transition: fill .5s ease;
+    fill: #2E8D6C;
+}
+
+.Pricing tr td {
+    padding: 1rem;
+    border-spacing: 0;
+}
+
+.Pricing tr td:first-child {
+    font-weight: bold;
+}
+
+.Pricing tr td:not(:first-child) {
+    text-align: center;
+}
+
+.Pricing tr:nth-of-type(2n) {
+    background: var(--lightGrey);
+}
+
+.Pricing tr:not(:first-of-type):hover {
+    background-color: var(--darkGrey);
+    color: white;
+}
+
+.Pricing tr:not(:first-of-type):hover svg path {
+    fill: white;
+}
