@@ -4,7 +4,7 @@ import PageHeader from '../components/PageHeader'
 import Content from '../components/Content'
 import Layout from '../components/Layout'
 import Buckets from '../components/Buckets'
-import USP from '../components/Usp'
+import Usp from '../components/Usp'
 import ClientLogos from '../components/ClientLogos'
 
 // Export Template for use in CMS preview
@@ -27,7 +27,7 @@ export const HomePageTemplate = ({ title, subtitle, button, brochure, featuredIm
         <Content source={body} />
       </div>
     </section> */}
-    <USP></USP>
+    <Usp />
     <ClientLogos />
   </main>
 )
