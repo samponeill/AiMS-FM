@@ -1,9 +1,9 @@
 import React from 'react'
 import Image from './Image'
 
-import './Usp.css'
+import './HomePageContent.css'
 
-const Usp = ({
+const HomePageContent = ({
   className = '',
   ...props
 }) => ( 
@@ -92,6 +92,6 @@ const Usp = ({
   </>
 )
 
-export default Usp;
+export default HomePageContent;
 
   

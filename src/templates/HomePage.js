@@ -1,10 +1,10 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import PageHeader from '../components/PageHeader'
-import Content from '../components/Content'
+// import Content from '../components/Content'
 import Layout from '../components/Layout'
 import Buckets from '../components/Buckets'
-import Usp from '../components/Usp'
+import HomePageContent from '../components/HomePageContent.js'
 import ClientLogos from '../components/ClientLogos'
 
 // Export Template for use in CMS preview
@@ -27,7 +27,7 @@ export const HomePageTemplate = ({ title, subtitle, button, brochure, featuredIm
         <Content source={body} />
       </div>
     </section> */}
-    <Usp />
+    <HomePageContent />
     <ClientLogos />
   </main>
 )
