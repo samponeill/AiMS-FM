@@ -4,7 +4,6 @@ import PageHeader from '../components/PageHeader'
 import Content from '../components/Content'
 import Layout from '../components/Layout'
 import Buckets from '../components/Buckets'
-import Image from '../components/Image'
 import USP from '../components/Usp'
 import ClientLogos from '../components/ClientLogos'
 
@@ -13,6 +12,7 @@ export const HomePageTemplate = ({ title, subtitle, button, brochure, featuredIm
   <main className="Home">
     <PageHeader
       large
+      className="home"
       title={title}
       subtitle={subtitle}
       backgroundImage={featuredImage}
@@ -21,11 +21,7 @@ export const HomePageTemplate = ({ title, subtitle, button, brochure, featuredIm
       bucketsHeading={bucketsHeading}
       buckets={buckets}
     />
-    <section className="section">
-      <div className="container">
-        <Buckets source={buckets} />
-      </div>
-    </section>
+    <Buckets source={buckets} />
     {/* <section className="section">
       <div className="container">
         <Content source={body} />

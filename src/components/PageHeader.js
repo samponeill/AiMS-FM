@@ -30,7 +30,7 @@ const PageHeader = ({
       )}
       <div className="container relative">
         <div className="PaheHeader--Headercontainer">
-          <h1 className="PageHeader--Title">{title}</h1>
+          <h1 className="PageHeader--Title highlight">{title}</h1>
           {subtitle && (
             <Content className="PageHeader--Subtitle" src={subtitle} />
           )}

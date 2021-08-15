@@ -29,10 +29,7 @@ export default ({ children, meta, title }) => {
               image
             }
           }
-          allPosts: allMarkdownRemark(
-            filter: { fields: { contentType: { eq: "postCategories" } } }
-            sort: { order: DESC, fields: [frontmatter___date] }
-          ) {
+          allPosts: allMarkdownRemark {
             edges {
               node {
                 fields {

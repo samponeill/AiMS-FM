@@ -78,11 +78,11 @@ export class Navigation extends Component {
               <div className="Nav--Links">
                 <NavLink className="NavLink" to="/">Home</NavLink>
                 <NavLink className="NavLink" to="/pricing/">Pricing</NavLink>
-                <NavLink className="NavLink" to="/default/">Your sector</NavLink>
-                <NavLink className="NavLink" to="/about/">About us</NavLink>
+                <NavLink className="NavLink" to="/your-sector/">Your sector</NavLink>
+                <NavLink className="NavLink" to="/about-us/">About us</NavLink>
               </div>
               <div className="Nav--Links">
-                <NavLink className="NavLink__strong" to="/contact/">Login</NavLink>
+                {/* <NavLink className="NavLink__strong" to="/contact/">Login</NavLink> */}
                 <NavLink className="button button--primary" to="/contact/">Book a demo</NavLink>
               </div>
             </div>            

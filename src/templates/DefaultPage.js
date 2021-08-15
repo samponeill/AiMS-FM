@@ -4,7 +4,8 @@ import { graphql } from 'gatsby'
 import PageHeader from '../components/PageHeader'
 import Content from '../components/Content'
 import Layout from '../components/Layout'
-import SVGIcon from '../components/SVGIcon'
+import MidForm from '../components/MidForm'
+import ClientLogos from '../components/ClientLogos'
 
 // Export Template for use in CMS preview
 export const DefaultPageTemplate = ({
@@ -23,9 +24,10 @@ export const DefaultPageTemplate = ({
     <section className="section">
       <div className="container">
         <Content source={body} />
-        <SVGIcon src="/images/calendar.svg" />
       </div>
     </section>
+    <MidForm />
+    <ClientLogos />    
   </main>
 )
 

@@ -27,7 +27,7 @@ CMS.registerPreviewTemplate('home-page', ({ entry }) => (
   <HomePageTemplate {...entry.toJS().data} />
 ))
 CMS.registerPreviewTemplate('components-page', ({ entry }) => (
-  <ComponentsPageTemplate {...entry.toJS().data} />
+  <PricingPageTemplate {...entry.toJS().data} />
 ))
 CMS.registerPreviewTemplate('contact-page', ({ entry }) => (
   <ContactPageTemplate {...entry.toJS().data} />

@@ -19,7 +19,7 @@ import Advanced from '../../static/images/pricing-03.svg'
 import '../components/Pricing.css';
 
 // Export Template for use in CMS preview
-export const ComponentsPageTemplate = ({
+export const PricingPageTemplate = ({
   title,
   subtitle,
   featuredImage,
@@ -257,7 +257,7 @@ const ComponentsPage = ({ data: { page } }) => (
     meta={page.frontmatter.meta || false}
     title={page.frontmatter.title || false}
   >
-    <ComponentsPageTemplate {...page} {...page.frontmatter} body={page.html} />
+    <PricingPageTemplate {...page} {...page.frontmatter} body={page.html} />
   </Layout>
 )
 
