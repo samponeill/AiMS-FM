@@ -18,10 +18,8 @@ export const HomePageTemplate = ({ title, subtitle, button, brochure, featuredIm
       backgroundImage={featuredImage}
       button={button}
       brochure={brochure}
-      bucketsHeading={bucketsHeading}
-      buckets={buckets}
     />
-    <Buckets source={buckets} />
+    <Buckets />
     {/* <section className="section">
       <div className="container">
         <Content source={body} />
@@ -61,13 +59,6 @@ export const pageQuery = graphql`
         }
         brochure {
           text
-        }
-        bucketsHeading
-        buckets {
-          heading
-          linkText
-          image
-          link
         }
       }
     }

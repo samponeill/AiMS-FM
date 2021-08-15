@@ -6,6 +6,7 @@ import Content from '../components/Content'
 import Layout from '../components/Layout'
 import MidForm from '../components/MidForm'
 import ClientLogos from '../components/ClientLogos'
+import Buckets from '../components/Buckets'
 
 // Export Template for use in CMS preview
 export const DefaultPageTemplate = ({
@@ -20,7 +21,7 @@ export const DefaultPageTemplate = ({
       subtitle={subtitle}
       backgroundImage={featuredImage}
     />
-
+    <Buckets />
     <section className="section">
       <div className="container">
         <Content source={body} />

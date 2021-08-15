@@ -5,36 +5,31 @@ import SmallForm from './SmallForm'
 import './Link.css'
 import './Buckets.css'
 import './Form.css'
+import { StaticQuery, graphql } from "gatsby"
 
-export default class Buckets extends React.Component {
-  static defaultProps = {
-    items: [],
-    className: ''
-  }
-
-  toggleAccordion(e) {
-    e.target.classList.toggle('active')
-  }
-
-  handleKeyDown = ev => {
-    if (ev.keyCode === 13 && !ev.target.classList.contains('active')) {
-      // enter to open
-      this.toggleAccordion(ev)
-    } else if (ev.keyCode === 27 && ev.target.classList.contains('active')) {
-      // escape to close
-      this.toggleAccordion(ev)
-    }
-  }
-
-
-  render() {
-    const { heading, source, className } = this.props
-    return (
-      <section className="section section__dark">
+export default function Buckets({ className, props }) {
+  return (
+    <StaticQuery
+      query={graphql`
+        query BucketsQuery {
+          settingsYaml {
+            bucketsHeading
+            buckets {
+              heading
+              link
+              linkText
+              image
+            }
+          }
+        }
+      `}
+      render={data => (
+        <section className="section section__dark Section--buckets">
         <div className="container">
-          <div log={console.log(this.props)} className={`Buckets ${className}`}>
-            {!!source &&
-              source.map((item, index) => (
+        <h2 className="highlight">{data.settingsYaml.bucketsHeading}</h2>
+          <div className={`Buckets ${className}`}>
+            {!!data.settingsYaml.buckets &&
+              data.settingsYaml.buckets.map((item, index) => (
                 <div
                   className={`Buckets--item `}
                   key={`bucket-item-${_kebabCase(item.heading) + '-' + index}`}
@@ -61,6 +56,7 @@ export default class Buckets extends React.Component {
           </div>
         </div>
       </section>
-    )
-  }
+      )}
+    />
+  )
 }
