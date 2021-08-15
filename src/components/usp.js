@@ -4,7 +4,7 @@ import Marked from 'react-markdown'
 import PropTypes from 'prop-types'
 import Image from './Image'
 
-import './usp.css'
+import './Usp.css'
 
 const Usp = ({
   className = '',
