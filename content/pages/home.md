@@ -23,12 +23,9 @@ buckets:
     image: https://ucarecdn.com/ca2fcec0-49fe-44f3-bd1d-45e7c4852a40/
     link: /contact/
 meta:
-  description: This is a meta description.
-  title: The Ultimate Gatsby Starter
-subtitle: Fully customisable, cloud-based CAFM software for your property
-  management system.  Get a real-time overview of all maintenance work and
-  associated costs, boost contractor response times and reduce risk with our
-  automated compliance systems
+  description: Fully customisable, cloud-based CAFM software for your property management system. Get a real-time overview of all maintenance work and associated costs, boost contractor response times and reduce risk with our automated compliance systems
+  title: ''
+subtitle: Fully customisable, cloud-based CAFM software for your property management system. Get a real-time overview of all maintenance work and associated costs, boost contractor response times and reduce risk with our automated compliance systems
 ---
 # Fully customisable
 
