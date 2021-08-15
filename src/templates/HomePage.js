@@ -6,6 +6,7 @@ import Layout from '../components/Layout'
 import Buckets from '../components/Buckets'
 import Image from '../components/Image'
 import USP from '../components/Usp'
+import ClientLogos from '../components/ClientLogos'
 
 // Export Template for use in CMS preview
 export const HomePageTemplate = ({ title, subtitle, button, brochure, featuredImage, bucketsHeading, buckets, body }) => (
@@ -31,6 +32,7 @@ export const HomePageTemplate = ({ title, subtitle, button, brochure, featuredIm
       </div>
     </section> */}
     <USP></USP>
+    <ClientLogos />
   </main>
 )
 

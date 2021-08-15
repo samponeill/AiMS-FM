@@ -60,7 +60,7 @@
 
 .usp--list li:before {
     content: '';
-    background-image: url('/images/check.svg');
+    background-image: url('/images/check-li.svg');
     height: inherit;
     min-width: 1.5rem;
     display: block;

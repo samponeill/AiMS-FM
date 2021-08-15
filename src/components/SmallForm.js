@@ -22,7 +22,7 @@ const Form = ({
         </p>
         <p>
             <label htmlFor="message">Message</label>
-            <textarea name="message"></textarea>
+            <textarea rows="5" name="message"></textarea>
         </p>
         <div className="SmallForm--button-wrapper">
             <button className="button--primary" type="submit">Book a demo</button>   

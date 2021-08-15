@@ -1,0 +1,21 @@
+.Logos--section {
+    background: white;
+    color: var(--darkGrey);
+}
+
+.Logos--grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1rem;
+    margin: auto;
+    align-items: center;
+    max-width: max(500px, 75vw);
+}
+
+.Logos--grid img {
+    border-radius: var(--borderRadius);
+    object-fit: contain;
+    width: 50%;
+    margin: auto;
+}

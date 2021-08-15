@@ -284,6 +284,7 @@ blockquote {
 
 .highlight {
   margin-bottom: 2.5rem;
+  position: relative;
 }
 
 .highlight:after {
@@ -295,18 +296,20 @@ blockquote {
   background-color: var(--highlight);
   -webkit-transition: background-color 0.5s ease;
   transition: background-color 0.5s ease;
-  margin: auto;
   margin-top: 0.5rem;
-  position: absolute;
   left: 0;
 }
 
-.hightlight--center:after {
-  transform: translateX(-50%);
-  left: 50%;
+.highlight--center {
+  text-align: center;
+  display: block;
 }
 
-button {
+.highlight--center:after {
+  margin: auto;
+}
+
+button, input[type="submit"] {
   border-radius: 20px;
   padding: 1.5rem 2.5rem;
   text-decoration: unset;
@@ -323,7 +326,13 @@ button:hover {
 button.button--primary {
   background-color: var(--primary);
   color: black;
-  box-shadow: 0 0 12px var(--primary);
+  box-shadow: 0 0 8px var(--primary);
+}
+
+.button--secondary {
+  background-color: var(--darkGrey);
+  color: white;
+  box-shadow: 0 0 8px var(--darkGrey);
 }
 
 ul {

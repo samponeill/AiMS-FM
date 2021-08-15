@@ -1,0 +1,33 @@
+.CTA svg {
+    fill: var(--highlight);
+}
+
+.CTA--grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 2rem;
+    margin: auto;
+}
+
+.CTA--form {
+    background: rgb(13,13,13);
+    background: linear-gradient(-10deg, rgba(13,13,13,1) 0%, rgba(13,13,13,1) 20%, #278e6b 100%);
+    border-radius: var(--borderRadius);
+    padding: 4rem;
+}
+
+.CTA--form form {
+    width: 100%;
+    max-width: 100%;
+}
+
+.CTA--form form input:not([type="submit"]), .CTA--form form textarea, .CTA--form form select  {
+    border: none;
+    background: white;
+}
+
+.CTA--form label, .CTA--form h2 {
+    color: white;
+    font-weight: bold;
+}

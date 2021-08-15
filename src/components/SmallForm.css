@@ -20,9 +20,13 @@
 
 .SmallForm input {
     padding: 1rem;
+    border-radius: var(--borderRadius);
+    border: none;
 }
 
 .SmallForm textarea {
+    border-radius: var(--borderRadius);
     padding: 1rem;
     height: 100%;
+    border: none;
 }

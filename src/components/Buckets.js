@@ -6,7 +6,7 @@ import './Link.css'
 import './Buckets.css'
 import './Form.css'
 
-export default class Accordion extends React.Component {
+export default class Buckets extends React.Component {
   static defaultProps = {
     items: [],
     className: ''

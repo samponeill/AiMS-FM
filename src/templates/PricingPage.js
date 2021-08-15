@@ -8,6 +8,8 @@ import Accordion from '../components/Accordion'
 import BackgroundVideo from '../components/BackgroundVideo'
 import Gallery from '../components/Gallery'
 import Popup from '../components/Popup'
+import ClientLogos from '../components/ClientLogos'
+import MidForm from '../components/MidForm'
 
 import Check from '../../static/images/check.svg'
 import Basic from '../../static/images/pricing-01.svg'
@@ -31,7 +33,7 @@ export const ComponentsPageTemplate = ({
   gallery
 }) => (
   <main className="Pricing">
-    <h1 className="highlight hightlight--center">Pricing plans and features</h1>
+    <h1 className="highlight highlight--center">Pricing plans and features</h1>
     <section className="pricing section">
       <div className="container">
       <table rules="none">
@@ -202,6 +204,51 @@ export const ComponentsPageTemplate = ({
       </table>
       </div>
     </section>
+    <section className="section">
+      <div className="container">
+        <h2 className="highlight highlight--center">Choose what works for you</h2>
+        <div className="Pricing--choices">
+          <div className="Pricing--selection__basic Pricing--selection">
+            <div className="Pricing--selection--title">
+              <h3><Basic /><span>Basic</span></h3>
+              <p><span>Manage your assets and solve customer requests and problems</span></p>
+            </div>
+            <div className="Pricing--selection--price">
+              <div>
+                <p className="price">£35</p>
+                <p><span>Per user per month</span></p>
+              </div>
+              <a className="button button--primary" href="">Book a demo</a>
+            </div>
+          </div>
+          <div className="Pricing--selection__premium Pricing--selection">
+            <div className="Pricing--selection--title">
+              <h3><Premium /><span>Premium</span></h3>
+              <p><span>All the features you need to manage complex workflows</span></p>
+            </div>
+            <div className="Pricing--selection--price">
+              <div>
+                <p className="price">£50</p>
+                <p><span>Per user per month</span></p>
+              </div>
+              <a className="button button--primary" href="">Book a demo</a>
+            </div>
+          </div>
+          <div className="Pricing--selection__advanced Pricing--selection">
+            <div className="Pricing--selection--title">
+              <h3><Advanced /><span>Advanced</span></h3>
+              <p><span>Bespoke service plan for the best customer experience</span></p>
+            </div>
+            <div className="Pricing--selection--price">
+              <p className="price">Get in touch</p>
+            <a className="button button--secondary" href="">Contact us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <ClientLogos />
+    <MidForm />
   </main>
 )
 
