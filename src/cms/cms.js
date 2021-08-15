@@ -7,7 +7,7 @@ import { PricingPageTemplate } from '../templates/PricingPage'
 import { ContactPageTemplate } from '../templates/ContactPage'
 import { DefaultPageTemplate } from '../templates/DefaultPage'
 // import { BlogIndexTemplate } from '../templates/BlogIndex'
-import { SinglePostTemplate } from '../templates/SinglePost'
+// import { SinglePostTemplate } from '../templates/SinglePost'
 import uploadcare from 'netlify-cms-media-library-uploadcare'
 
 CMS.registerMediaLibrary(uploadcare)
@@ -35,10 +35,7 @@ CMS.registerPreviewTemplate('contact-page', ({ entry }) => (
 CMS.registerPreviewTemplate('infoPages', ({ entry }) => (
   <DefaultPageTemplate {...entry.toJS().data} />
 ))
-// CMS.registerPreviewTemplate('blog-page', ({ entry }) => (
-//   <BlogIndexTemplate {...entry.toJS().data} />
+// CMS.registerPreviewTemplate('posts', ({ entry }) => (
+//   <SinglePostTemplate {...entry.toJS().data} />
 // ))
-CMS.registerPreviewTemplate('posts', ({ entry }) => (
-  <SinglePostTemplate {...entry.toJS().data} />
-))
 
