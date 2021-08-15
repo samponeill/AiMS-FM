@@ -7,3 +7,17 @@ siteDescription: Fully customisable, cloud-based CAFM software for your property
 socialMediaCard:
   image: https://ucarecdn.com/acb6e5a8-5d16-4213-85ef-85fb23e12c65/
 googleTrackingId: ""
+bucketsHeading: "Easy-to-use CAFM software for:"
+buckets:
+  - image: https://ucarecdn.com/5c9d720f-5181-486f-b040-6fb8aa34f70f/
+    heading: Facilities management companies
+    linkText: Find out more
+    link: /facilities-management-companies
+  - heading: Maintenance industry providers
+    image: https://ucarecdn.com/8e7b0eb7-475c-4a8b-a4d9-490356fff9b9/
+    linkText: Find out more
+    link: maintenance-industry-providers
+  - heading: Property Landlords
+    link: property-landlords
+    linkText: Find out more
+    image: https://ucarecdn.com/356e5ff4-96ab-4314-8911-490677af65e2/
