@@ -6,7 +6,7 @@ import Image from './Image'
 
 import './usp.css'
 
-const USP = ({
+const Usp = ({
   className = '',
   ...props
 }) => ( 
@@ -95,6 +95,6 @@ const USP = ({
   </>
 )
 
-export default USP;
+export default Usp;
 
   
