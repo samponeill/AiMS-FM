@@ -50,7 +50,6 @@ export const pageQuery = graphql`
     page: markdownRemark(id: { eq: $id }) {
       ...Meta
       html
-
       frontmatter {
         slug
         title

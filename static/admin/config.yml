@@ -444,3 +444,15 @@ collections: # A list of collections the CMS should be able to edit
               widget: string,
               required: false,
             }
+          - { label: 'Buckets Heading', name: 'bucketsHeading', widget: 'string' }
+          - label: 'Buckets'
+            name: 'buckets'
+            widget: 'list'
+            required: false
+            min: 3
+            max: 3
+            fields:
+              - { label: 'Heading', name: 'heading', widget: 'string' }
+              - { label: Image, name: image, widget: image }
+              - { label: Link text, name: linkText, widget: 'string' }
+              - { label: Link, name: link, widget: 'string' }            

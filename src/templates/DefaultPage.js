@@ -52,6 +52,6 @@ export const pageQuery = graphql`
         subtitle
         featuredImage
       }
-    }
+    }, 
   }
 `
