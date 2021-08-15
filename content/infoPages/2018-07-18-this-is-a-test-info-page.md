@@ -1,16 +1,17 @@
 ---
 template: DefaultPage
-slug: test slug
-title: This is a test info page
-featuredImage: >-
-  https://ucarecdn.com/0a485165-65c4-42ee-bf35-b93fbaf0fd2e/-/preview/-/rotate/270/
+slug: about-us
+title: About us
+featuredImage: https://ucarecdn.com/bbde8cb1-dc0b-4c0d-90da-4660e0869ef5/
 meta:
-  description: test meta description
-  title: test meta title
+  description: An an all-in-one facilities management system that is easy to use
+    and can be customised to suit any user’s needs.
+  title: About us
 ---
+Working in the Building Management and Facilities Maintenance Industry for over 20 years, we were looking for a software that could implement all the functionalities and tools required to improve the process of our business and help us to manage the expectations of our clients.
 
-This is placeholder text that our web designers put here to make sure words appear properly on your website. This text is going to be replaced once the website is completed. You are currently reading text that is written in English, not any other language.
+After testing and trialling endless different systems, we were unable to find a management software that was able to fulfil all our requirements, was user friendly, and easy to use.
 
-Be careful not to waste too much time reading placeholder text! This text isn’t going to remain here because it doesn't pertain to the website. This paragraph has been copied from a program that automatically generates paragraphs like this.
+So with this in mind we created our own system called AiMS.
 
-**It is useful for web designers to use placeholder text so they can easily see what different fonts look like on a realistic paragraph.**
+With trialling and testing many different applications, we were able  to learn from the mistakes of other companies and create an all-in-one management system that is easy to use and can be customised to suit any user’s needs.
