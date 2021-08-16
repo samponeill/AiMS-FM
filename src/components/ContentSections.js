@@ -11,15 +11,17 @@ export default class ContentSections extends React.Component {
         const { items, className } = this.props
         return (
           <section log={console.log(items)} className={`section ContentSections--section ${className}`}>
-            <div className="ContentSections--grid">
+            <div className="">
                 {!!items &&
                 items.map((item, index) => (
                     <div
                     className={`ContentSections--item `}
                     key={`ContentSections-item-${_kebabCase(item.title) + '-' + index}`}
                     >
-                    <Content source={item.content} />
-                    <Image src={item.image} alt={item.alt} />
+                    <div className="ContentSections--content">
+                        <Content source={item.content} />
+                    </div>
+                    <Image className="ContentSections--image" src={item.image} alt={item.alt} />
                     </div>
                 ))}
             </div>

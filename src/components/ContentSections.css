@@ -1,0 +1,41 @@
+.ContentSections--section {
+    width: 100%;
+    padding: 0;
+}
+
+.ContentSections--item {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    position: relative;
+    min-height: 100vh;
+    grid-auto-flow: dense;
+}
+
+.ContentSections--item:nth-of-type(2n) .ContentSections--content {
+    grid-column-start: 2;
+}
+
+.ContentSections--item:nth-of-type(2n - 1) .ContentSections--content {
+    grid-column-start: 1;
+}
+
+.ContentSections--content {
+    padding-left: 5vw;
+    padding-right: 5vw;
+    display: inline-flex;
+    margin: auto 0;
+}
+
+.ContentSections--image {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.ContentSections--image img {
+    display: block;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}

@@ -346,6 +346,7 @@ button.button--primary {
 ul {
   padding-left: unset;
   list-style: none;
+  margin-bottom: 4rem;
 }
 
 li {

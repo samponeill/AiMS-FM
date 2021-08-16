@@ -31,8 +31,8 @@ export const DefaultPageTemplate = ({
       </div>
     </section>
     : ""}
-    {body ? 
-    <Content source={body} />
+    {sections ? 
+    <ContentSections items={sections} />
     : ""}
     <Buckets />
     <MidForm />
