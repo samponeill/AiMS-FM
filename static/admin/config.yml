@@ -403,6 +403,27 @@ collections: # A list of collections the CMS should be able to edit
             }
           - { label: Noindex, name: noindex, widget: boolean, required: false }
 
+  - name: 'testimonials'
+    label: 'Testimonials'
+    delete: false # Prevent users from deleting documents in this collection
+    editor:
+      preview: false
+    files:
+      - file: 'content/settings/testimonials.yml'
+        label: 'Testimonials'
+        name: 'testimonials'
+        fields: 
+          - label: 'Client Testimonials'
+            name: 'testimonials'
+            widget: 'list'
+            required: false
+            fields:
+              - { label: 'Client name', name: 'name', widget: 'string' }
+              - { label: Image, name: image, widget: image }
+              - { label: 'Image alt text', name: 'alt', widget: 'string' }
+              - { label: Quote, name: quote, widget: 'string' }            
+
+          
   - name: 'settings'
     label: 'Settings'
     delete: false # Prevent users from deleting documents in this collection
