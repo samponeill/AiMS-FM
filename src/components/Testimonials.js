@@ -11,7 +11,7 @@ export default function Buckets({ className, props }) {
   return (
     <StaticQuery
       query={graphql`
-        query BucketsQuery {
+        query TestimonialsQuery {
           settingsYaml {
             bucketsHeading
             buckets {
