@@ -32,15 +32,15 @@ intro: AiMS is a reliable, resilient and highly secure management system that
 </ul>
 </div>
 
-<div class="grid__item">
+<div class="Content--grid__item">
 <img alt="Worker in protective gear and orange high vis in a cherry picker working on the blacked-out window of a large orange building" src="https://ucarecdn.com/c71e7fed-5316-4139-84c0-4cabd7bcb3da/" />
 </div>
 
-<div class="grid__item">
+<div class="Content--grid__item">
 <img alt="Construction worker straddling a ladder while working on the ceiling of an internal construction site" src="https://ucarecdn.com/bbd412b4-2a4a-4ea1-aa69-eda553174e2d/"
 </div>
 
-<div class="grid__item">
+<div class="Content--grid__item">
 <h3>Contractor management</h3>
 
 <ul>
