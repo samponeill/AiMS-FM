@@ -301,27 +301,14 @@ collections: # A list of collections the CMS should be able to edit
       - { label: Slug, name: slug, widget: string }
       - { label: Title, name: title, widget: string }
       - { label: Featured Image, name: featuredImage, widget: image }
-      - { label: Intro, name: intro, widget: markdown, required: false }
       - { label: Body, name: body, widget: markdown, required: false }
-      - label: 'Meta'
+      - label: 'Sections'
+        name: 'sections'
+        widget: 'list'
         required: false
-        name: 'meta'
-        widget: 'object'
         fields:
-          - { label: Title, name: title, widget: string, required: false }
-          - {
-              label: Description,
-              name: description,
-              widget: text,
-              required: false,
-            }
-          - {
-              label: Canonical Link,
-              name: canonicalLink,
-              widget: string,
-              required: false,
-            }
-          - { label: Noindex, name: noindex, widget: boolean, required: false }
+          - { name: Content, label: content, widget: markdown, }
+          - { label: Image, name: image, widget: image }
 
   - name: posts
     label: Post
