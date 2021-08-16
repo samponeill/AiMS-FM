@@ -4,6 +4,11 @@ slug: about-us
 title: About us
 featuredImage: https://ucarecdn.com/bbde8cb1-dc0b-4c0d-90da-4660e0869ef5/
 intro: ''
+sections:
+  - content: ''
+    image: ''
+  - content: ''
+    image: ''
 meta:
   description: An an all-in-one facilities management system that is easy to use
     and can be customised to suit any user’s needs.

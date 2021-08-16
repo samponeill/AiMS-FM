@@ -7,6 +7,7 @@ import Layout from '../components/Layout'
 import MidForm from '../components/MidForm'
 import ClientLogos from '../components/ClientLogos'
 import Buckets from '../components/Buckets'
+import ContentSections from '../components/ContentSections'
 
 // Export Template for use in CMS preview
 export const DefaultPageTemplate = ({
@@ -14,7 +15,8 @@ export const DefaultPageTemplate = ({
   subtitle,
   featuredImage,
   intro,
-  body
+  body,
+  sections
 }) => (
   <main className="DefaultPage">
     <PageHeader
@@ -53,15 +55,15 @@ export const pageQuery = graphql`
     page: markdownRemark(id: { eq: $id }) {
       ...Meta
       html
-      sections {
-        body
-        image
-      }
       frontmatter {
         slug
         title
         subtitle
         featuredImage
+        sections {
+          content
+          image
+        }        
       }
     }, 
   }

@@ -8,7 +8,7 @@ intro: AiMS is a reliable, resilient and highly secure management system that
   Our fully integrated system is hosted on our secure servers, removing the need
   to deploy software in house and reduce administration costs.
 sections:
-  - Content: |-
+  - content: |-
       ## Easy-to-use CAFM software for:
 
       ### Work order management
@@ -27,7 +27,7 @@ sections:
       * All your documents are kept safely in one place
       * Clear view of outstanding services / PPMs
     image: https://ucarecdn.com/812f76c5-e22c-4a77-b626-8a3f8e55b03f/
-  - Content: >-
+  - content: >-
       ### Contractor management
 
 

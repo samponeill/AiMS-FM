@@ -307,7 +307,7 @@ collections: # A list of collections the CMS should be able to edit
         widget: 'list'
         required: false
         fields:
-          - { name: Content, label: content, widget: markdown, }
+          - { label: Content, name: content, widget: markdown, }
           - { label: Image, name: image, widget: image }
           - { label: alt, name: alt, widget: string }
 
