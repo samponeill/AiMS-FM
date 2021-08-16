@@ -1,0 +1,35 @@
+.Testimonials {
+    background: rgb(13,13,13);
+    background: linear-gradient(-10deg, rgba(13,13,13,1) 0%, rgba(13,13,13,1) 20%, #278e6b 100%);
+    border-radius: var(--borderRadius);
+    padding: 4rem;
+    color: white;
+}
+
+.Testimonials .highlight:after {
+    background-color: var(--primary);
+}
+
+.Testimonials--item {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+
+.Testimonials--text {
+    margin: auto 0 2rem auto;
+}
+
+.Testimonials--image {
+    position: relative;
+    width: 100%;
+    height: 25rem;
+    overflow: hidden;
+    border-radius: var(--borderRadius);
+}
+
+.Testimonials--image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

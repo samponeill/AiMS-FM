@@ -375,3 +375,17 @@ address {
   margin-block-start: 1em;
   margin-block-end: 1em;
 }
+
+blockquote {
+  border-left: unset;
+  padding-left: unset;
+  font-style: normal;
+  font-size: 1.75rem;
+  line-height: 1.5;
+}
+
+cite {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.75rem;
+}

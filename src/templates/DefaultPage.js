@@ -8,6 +8,7 @@ import MidForm from '../components/MidForm'
 import ClientLogos from '../components/ClientLogos'
 import Buckets from '../components/Buckets'
 import ContentSections from '../components/ContentSections'
+import Testimonials from '../components/Testimonials'
 
 // Export Template for use in CMS preview
 export const DefaultPageTemplate = ({
@@ -35,8 +36,8 @@ export const DefaultPageTemplate = ({
     <ContentSections items={sections} />
     : ""}
     <Buckets />
+    <Testimonials />
     <MidForm />
-    <ClientLogos />    
   </main>
 )
 

@@ -4,6 +4,8 @@ import { StaticQuery, graphql } from 'gatsby'
 import Meta from './Meta'
 import Nav from './Nav'
 import Footer from './Footer'
+import Testimonials from './Testimonials'
+import ClientLogos from './ClientLogos'
 import { Location } from '@reach/router'
 import { useInView } from 'react-intersection-observer';
 
@@ -82,6 +84,10 @@ export default ({ children, meta, title }) => {
             <Nav inView={inView} subNav={subNav} />
 
             <Fragment>{children}</Fragment>
+
+            <ClientLogos />
+
+            <Testimonials />
 
             <Footer />
           </Fragment>

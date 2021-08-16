@@ -26,7 +26,6 @@ export const HomePageTemplate = ({ title, subtitle, button, brochure, featuredIm
       </div>
     </section> */}
     <HomePageContent />
-    <ClientLogos />
   </main>
 )
 
