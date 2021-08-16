@@ -13,6 +13,7 @@ export const DefaultPageTemplate = ({
   title,
   subtitle,
   featuredImage,
+  intro,
   body
 }) => (
   <main className="DefaultPage">
@@ -21,6 +22,13 @@ export const DefaultPageTemplate = ({
       subtitle={subtitle}
       backgroundImage={featuredImage}
     />
+    {intro ? 
+    <section className="section">
+      <div className="container">
+        <Content source={intro} />
+      </div>
+    </section>
+    : ""}
     {body ? 
     <section className="section">
       <div className="container">
@@ -54,6 +62,7 @@ export const pageQuery = graphql`
         title
         subtitle
         featuredImage
+        intro
       }
     }, 
   }
