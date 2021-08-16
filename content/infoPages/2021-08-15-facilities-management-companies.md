@@ -10,46 +10,52 @@ intro: AiMS is a reliable, resilient and highly secure management system that
 ---
 <div class="Content--grid">
 <div class="Content--grid__item">
-## Easy-to-use CAFM software for:
+<h2 class="highlight">Easy-to-use CAFM software for:</h2>
 
-### Work order management
+<h3>Work order management</h3>
 
-* Generate work orders
-* Get real-time updates and live notes 
-* See a map overview of all outstanding jobs
-* Before and after photos are easily visible 
-* Manage response time
+<ul>
+<li>Generate work orders</li>
+<li>Get real-time updates and live notes</li>
+<li>See a map overview of all outstanding jobs</li>
+<li>Before and after photos are easily visible</li>
+<li>Manage response time</li>
+</ul>
 
-### Improving workflow processes
-
-* Generate a service sheet from the engineers visit
-* Create purchase orders and view in a PDF format
-* Generate your won compliance certificates 
-* All your documents are kept safely in one place
-* Clear view of outstanding services / PPMs
+<h3>Improving workflow processes</h3>
+<ul>
+<li>Generate a service sheet from the engineers visit</li>
+<li>Create purchase orders and view in a PDF format</li>
+<li>Generate your won compliance certificates</li>
+<li>All your documents are kept safely in one place</li>
+<li>Clear view of outstanding services / PPMs</li>
+</ul>
 </div>
 
 <div class="grid__item">
-![Worker in protective gear and orange high vis in a cherry picker working on the blacked-out window of a large orange building](https://ucarecdn.com/c71e7fed-5316-4139-84c0-4cabd7bcb3da/)
+<img alt="Worker in protective gear and orange high vis in a cherry picker working on the blacked-out window of a large orange building" src="https://ucarecdn.com/c71e7fed-5316-4139-84c0-4cabd7bcb3da/" />
 </div>
 
 <div class="grid__item">
-![Construction worker straddling a ladder while working on the ceiling of an internal construction site](https://ucarecdn.com/bbd412b4-2a4a-4ea1-aa69-eda553174e2d/)
+<img alt="Construction worker straddling a ladder while working on the ceiling of an internal construction site" src="https://ucarecdn.com/bbd412b4-2a4a-4ea1-aa69-eda553174e2d/"
 </div>
 
 <div class="grid__item">
-### Contractor management
+<h3>Contractor management</h3>
 
-* Allow contractors to manage their work orders via the contractor portal
-* Enable contractors to supply invoices via the contractor portal 
-* Get real-time updates when engineers have attended jobs
+<ul>
+<li>Allow contractors to manage their work orders via the contractor portal</li>
+<li>Enable contractors to supply invoices via the contractor portal</li>
+<li>Get real-time updates when engineers have attended jobs</li>
+</ul>
 
-### Engineer management
-
-* Enable engineers to manage assigned jobs using the dedicated Engineer’s App 
-* Manage engineers’ time
-* Planning calendar to schedule engineers work
-* View the sites engineers are checked into 
-* Manage each engineer’s material costs
+<h3>Engineer management</h3>
+<ul>
+<li>Enable engineers to manage assigned jobs using the dedicated Engineer’s App</li>
+<li>Manage engineers’ time</li>
+<li>Planning calendar to schedule engineers work</li>
+<li>View the sites engineers are checked into</li>
+<li>Manage each engineer’s material costs</li>
+</ul>
 </div>
 </div>
