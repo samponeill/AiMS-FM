@@ -8,8 +8,8 @@ intro: AiMS is a reliable, resilient and highly secure management system that
   Our fully integrated system is hosted on our secure servers, removing the need
   to deploy software in house and reduce administration costs.
 ---
-
-
+<div class="Content--grid">
+<div class="Content--grid__item">
 ## Easy-to-use CAFM software for:
 
 ### Work order management
@@ -20,8 +20,6 @@ intro: AiMS is a reliable, resilient and highly secure management system that
 * Before and after photos are easily visible 
 * Manage response time
 
-
-
 ### Improving workflow processes
 
 * Generate a service sheet from the engineers visit
@@ -29,11 +27,17 @@ intro: AiMS is a reliable, resilient and highly secure management system that
 * Generate your won compliance certificates 
 * All your documents are kept safely in one place
 * Clear view of outstanding services / PPMs
+</div>
 
+<div class="grid__item">
 ![Worker in protective gear and orange high vis in a cherry picker working on the blacked-out window of a large orange building](https://ucarecdn.com/c71e7fed-5316-4139-84c0-4cabd7bcb3da/)
+</div>
 
+<div class="grid__item">
 ![Construction worker straddling a ladder while working on the ceiling of an internal construction site](https://ucarecdn.com/bbd412b4-2a4a-4ea1-aa69-eda553174e2d/)
+</div>
 
+<div class="grid__item">
 ### Contractor management
 
 * Allow contractors to manage their work orders via the contractor portal
@@ -47,3 +51,5 @@ intro: AiMS is a reliable, resilient and highly secure management system that
 * Planning calendar to schedule engineers work
 * View the sites engineers are checked into 
 * Manage each engineer’s material costs
+</div>
+</div>
