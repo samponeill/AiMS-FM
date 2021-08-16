@@ -21,3 +21,12 @@ buckets:
     link: property-landlords
     linkText: Find out more
     image: https://ucarecdn.com/356e5ff4-96ab-4314-8911-490677af65e2/
+testimonialsHeading: What our clients say
+testimonials:
+  - client: B. Feeter
+    image: https://ucarecdn.com/ed5c030c-d36a-456d-be62-70a146270c17/
+    alt: Empty modern restaurant interior with blue chairs, dark wooden flooring and
+      plenty of natural light
+    quote: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi
