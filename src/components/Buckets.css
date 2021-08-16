@@ -5,10 +5,6 @@
     grid-gap: 1rem;
 }
 
-.Section--buckets:nth-of-type(2) {
-    display: none;
-}
-
 .Buckets--item {
     background: white;
     color: var(--darkGrey);

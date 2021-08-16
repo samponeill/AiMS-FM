@@ -21,12 +21,14 @@ export const DefaultPageTemplate = ({
       subtitle={subtitle}
       backgroundImage={featuredImage}
     />
-    <Buckets />
+    {body ? 
     <section className="section">
       <div className="container">
         <Content source={body} />
       </div>
     </section>
+    : ""}
+    <Buckets />
     <MidForm />
     <ClientLogos />    
   </main>

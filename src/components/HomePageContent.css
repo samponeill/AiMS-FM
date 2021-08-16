@@ -53,19 +53,3 @@
     padding-left: 0;
 }
 
-.usp--list li {
-    margin-bottom: 1rem;
-    display: flex;
-}
-
-.usp--list li:before {
-    content: '';
-    background-image: url('/images/check-li.svg');
-    height: inherit;
-    min-width: 1.5rem;
-    display: block;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin-right: .5rem;
-}
