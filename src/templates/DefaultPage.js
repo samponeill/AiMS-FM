@@ -22,19 +22,15 @@ export const DefaultPageTemplate = ({
       subtitle={subtitle}
       backgroundImage={featuredImage}
     />
-    {intro ? 
-    <section className="section">
-      <div className="container">
-        <Content source={intro} />
-      </div>
-    </section>
-    : ""}
     {body ? 
     <section className="section">
       <div className="container">
         <Content source={body} />
       </div>
     </section>
+    : ""}
+    {body ? 
+    <Content source={body} />
     : ""}
     <Buckets />
     <MidForm />
@@ -57,12 +53,15 @@ export const pageQuery = graphql`
     page: markdownRemark(id: { eq: $id }) {
       ...Meta
       html
+      sections {
+        body
+        image
+      }
       frontmatter {
         slug
         title
         subtitle
         featuredImage
-        intro
       }
     }, 
   }
