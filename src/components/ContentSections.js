@@ -10,6 +10,8 @@ export default class ContentSections extends React.Component {
     render() {
         const { items, className } = this.props
         return (
+          <>
+          {!!items &&
           <section log={console.log(items)} className={`section ContentSections--section ${className}`}>
             <div className="">
                 {!!items &&
@@ -25,7 +27,9 @@ export default class ContentSections extends React.Component {
                     </div>
                 ))}
             </div>
-          </section> 
+          </section>
+          }
+          </>
         )
       }
     }

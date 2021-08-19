@@ -33,10 +33,10 @@ export const DefaultPageTemplate = ({
     </section>
     : ""}
     {sections ? 
-    <ContentSections items={sections} />
+      <ContentSections items={sections} />
     : ""}
     <Buckets />
-    <Testimonials />
+
     <MidForm />
   </main>
 )

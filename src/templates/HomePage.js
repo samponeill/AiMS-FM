@@ -5,7 +5,6 @@ import PageHeader from '../components/PageHeader'
 import Layout from '../components/Layout'
 import Buckets from '../components/Buckets'
 import HomePageContent from '../components/HomePageContent.js'
-import ClientLogos from '../components/ClientLogos'
 
 // Export Template for use in CMS preview
 export const HomePageTemplate = ({ title, subtitle, button, brochure, featuredImage, bucketsHeading, buckets, body }) => (
