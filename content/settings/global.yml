@@ -16,7 +16,7 @@ buckets:
   - heading: Maintenance industry providers
     image: https://ucarecdn.com/8e7b0eb7-475c-4a8b-a4d9-490356fff9b9/
     linkText: Find out more
-    link: maintenance-industry-providers
+    link: /maintenance-industry-providers
   - heading: Property Landlords
     link: property-landlords
     linkText: Find out more
