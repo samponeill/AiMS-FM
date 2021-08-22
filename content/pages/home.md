@@ -2,6 +2,7 @@
 template: HomePage
 slug: ""
 title: Industry Leading Facilities Management Software
+white: true
 featuredImage: https://ucarecdn.com/3873667e-cc55-4fcf-86ee-dda2991264ba/
 button:
   text: Book a demo

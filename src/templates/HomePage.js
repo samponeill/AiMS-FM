@@ -50,6 +50,7 @@ export const pageQuery = graphql`
       frontmatter {
         slug
         title
+        white
         subtitle
         featuredImage
         button {

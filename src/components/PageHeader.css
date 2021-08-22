@@ -30,6 +30,10 @@
   color: white;
 }
 
+.PageHeader--Title--White.highlight:after {
+  background-color: var(--primary);
+}
+
 .PageHeader--Subtitle {
   margin-bottom: 5rem;
   font-weight: 400;
