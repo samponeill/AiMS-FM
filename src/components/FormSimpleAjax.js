@@ -74,6 +74,7 @@ class Form extends React.Component {
           )}
           <div className="Form--Group">
             <label className="Form--Label">
+              <span>Firstname</span>
               <input
                 className="Form--Input Form--InputText"
                 type="text"
@@ -81,9 +82,9 @@ class Form extends React.Component {
                 name="firstname"
                 required
               />
-              <span>Firstname</span>
             </label>
             <label className="Form--Label">
+              <span>Lastname</span>
               <input
                 className="Form--Input Form--InputText"
                 type="text"
@@ -91,31 +92,10 @@ class Form extends React.Component {
                 name="lastname"
                 required
               />
-              <span>Lastname</span>
             </label>
           </div>
-          <fieldset>
-            <label className="Form--Label Form--Radio">
-              <input
-                className="Form--RadioInput"
-                type="radio"
-                name="gender"
-                value="male"
-                defaultChecked
-              />
-              <span>Male</span>
-            </label>
-            <label className="Form--Label Form--Radio">
-              <input
-                className="Form--RadioInput"
-                type="radio"
-                name="gender"
-                value="female"
-              />
-              <span>Female</span>
-            </label>
-          </fieldset>
           <label className="Form--Label">
+            <span>Email address</span>
             <input
               className="Form--Input Form--InputText"
               type="email"
@@ -123,24 +103,22 @@ class Form extends React.Component {
               name="emailAddress"
               required
             />
-            <span>Email address</span>
           </label>
           <label className="Form--Label has-arrow">
+            <span>Type of Enquiry</span>
             <select
               className="Form--Input Form--Select"
               name="type"
               defaultValue="Type of Enquiry"
               required
             >
-              <option disabled hidden>
-                Type of Enquiry
-              </option>
-              <option>Need to know more</option>
-              <option>Found a bug</option>
-              <option>Want to say hello</option>
+              <option>Book a demo</option>
+              <option>Bespoke service plan</option>
+              <option>Other</option>
             </select>
           </label>
           <label className="Form--Label">
+            <span>Message</span>
             <textarea
               className="Form--Input Form--Textarea Form--InputText"
               placeholder="Message"
@@ -148,7 +126,6 @@ class Form extends React.Component {
               rows="10"
               required
             />
-            <span>Message</span>
           </label>
           <label className="Form--Label Form-Checkbox">
             <input
@@ -165,9 +142,9 @@ class Form extends React.Component {
           {!!subject && <input type="hidden" name="subject" value={subject} />}
           <input type="hidden" name="form-name" value={name} />
           <input
-            className="Button Form--SubmitButton"
+            className="button button--primary"
             type="submit"
-            value="Enquire"
+            value="Submit"
             disabled={this.state.disabled}
           />
         </form>

@@ -8,6 +8,7 @@
     transition: box-shadow .25s;
     font-weight: 400;
     text-align: center;
+    cursor: pointer;
 }
 
 .button:hover {

@@ -14,7 +14,9 @@ export default ({
     data-netlify=''
     data-netlify-honeypot='_gotcha'
   >
-    <label className='Form--Label'>
+    <label htmlFor="name" className='Form--Label'>
+      First name
+    </label>
       <input
         className='Form--Input'
         type='text'
@@ -22,7 +24,6 @@ export default ({
         name='name'
         required
       />
-    </label>
     <label className='Form--Label'>
       <input
         className='Form--Input'

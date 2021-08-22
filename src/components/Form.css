@@ -34,10 +34,7 @@
 }
 
 .Form--Label > span {
-  position: absolute;
-  left: 2rem;
-  top: 1.5rem;
-  transition: 0.3s ease all;
+  font-weight: bold;
   opacity: 0.8;
   z-index: -1;
 }

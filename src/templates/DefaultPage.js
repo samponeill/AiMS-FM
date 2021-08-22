@@ -32,8 +32,8 @@ export const DefaultPageTemplate = ({
       </div>
     </section>
     : ""}
-    {sections ? 
-      <ContentSections items={sections} />
+    {sections && sections[0].content != "" ? 
+      <ContentSections log={console.log(sections)} items={sections} />
     : ""}
     <Buckets />
 
