@@ -13,6 +13,7 @@ import './ContactPage.css'
 export const ContactPageTemplate = ({
   body,
   title,
+  white,
   subtitle,
   featuredImage,
   address,
@@ -23,6 +24,7 @@ export const ContactPageTemplate = ({
   <main className="Contact">
     <PageHeader
       title={title}
+      white={white}
       subtitle={subtitle}
       backgroundImage={featuredImage}
     />
@@ -84,6 +86,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
+        white
         slug
         template
         subtitle

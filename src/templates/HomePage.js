@@ -7,12 +7,13 @@ import Buckets from '../components/Buckets'
 import HomePageContent from '../components/HomePageContent.js'
 
 // Export Template for use in CMS preview
-export const HomePageTemplate = ({ title, subtitle, button, brochure, featuredImage, bucketsHeading, buckets, body }) => (
+export const HomePageTemplate = ({ title, white, subtitle, button, brochure, featuredImage, bucketsHeading, buckets, body }) => (
   <main className="Home">
     <PageHeader
       large
       className="home"
       title={title}
+      white={white}
       subtitle={subtitle}
       backgroundImage={featuredImage}
       button={button}

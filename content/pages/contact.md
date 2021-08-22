@@ -2,6 +2,7 @@
 template: ContactPage
 slug: contact
 title: Contact us
+white: true
 featuredImage: https://ucarecdn.com/e22a858a-b420-47af-99f6-ed54b6860333/
 subtitle: .
 address: 'Willow Park, Wash Road, Basildon, Essex, SS15 4AZ'

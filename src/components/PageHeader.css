@@ -26,6 +26,10 @@
   line-height: 1.2;
 }
 
+.PageHeader--Title--White {
+  color: white;
+}
+
 .PageHeader--Subtitle {
   margin-bottom: 5rem;
   font-weight: 400;

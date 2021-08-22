@@ -13,6 +13,7 @@ import Testimonials from '../components/Testimonials'
 // Export Template for use in CMS preview
 export const DefaultPageTemplate = ({
   title,
+  white,
   subtitle,
   featuredImage,
   intro,
@@ -22,6 +23,7 @@ export const DefaultPageTemplate = ({
   <main className="DefaultPage">
     <PageHeader
       title={title}
+      white={white}
       subtitle={subtitle}
       backgroundImage={featuredImage}
     />
@@ -32,7 +34,7 @@ export const DefaultPageTemplate = ({
       </div>
     </section>
     : ""}
-    {sections && sections[0].content != "" ? 
+    {sections && sections[0].content !== '' ? 
       <ContentSections log={console.log(sections)} items={sections} />
     : ""}
     <Buckets />
@@ -59,6 +61,7 @@ export const pageQuery = graphql`
       frontmatter {
         slug
         title
+        white
         subtitle
         featuredImage
         sections {
