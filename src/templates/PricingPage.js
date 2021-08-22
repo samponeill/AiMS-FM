@@ -16,6 +16,8 @@ import Basic from '../../static/images/pricing-01.svg'
 import Premium from '../../static/images/pricing-02.svg'
 import Advanced from '../../static/images/pricing-03.svg'
 
+import Tooltip from '../components/Tooltip'
+
 import '../components/Pricing.css';
 
 // Export Template for use in CMS preview
@@ -45,97 +47,98 @@ export const PricingPageTemplate = ({
               <th><div><Advanced /><span>Advanced</span></div></th>
             </tr>
             <tr>
-              <td>Advanced Dashboard</td>
+              <td>Advanced Dashboard <Tooltip>Stay in control of your daily operations, Showing real time revelvent data on one unique dashboard.</Tooltip></td>
               <td><Check /></td>
               <td><Check /></td>
               <td><Check /></td>
             </tr>
             <tr>
-              <td>Job reporting</td>
+              <td>Job reporting <Tooltip>Wide range of reporting from Daily Reactive Jobs, Surveying or Quoting, Planned Prevention Maintenance on an Easy to use and user friendly job card.</Tooltip></td>
               <td><Check /></td>
               <td><Check /></td>
               <td><Check /></td>
             </tr>
             <tr>
-              <td>Unlimited Job orders</td>
+              <td>Unlimited Job orders <Tooltip>With AiMS there are no limits with endless job reporting.</Tooltip></td>
               <td><Check /></td>
               <td><Check /></td>
               <td><Check /></td>
             </tr>
             <tr>
-              <td>Asset Management</td>
+              <td>Asset Management <Tooltip>Manage the condition and the compliance status of the asset, saving you and your clients time and money.</Tooltip></td>
               <td><Check /></td>
               <td><Check /></td>
               <td><Check /></td>
             </tr>
             <tr>
-              <td>User Permissions</td>
+              <td>User Permissions <Tooltip>Manage the systems authorisation access given to each user to stay in line of the users job role or level of authority.</Tooltip></td>
               <td><Check /></td>
               <td><Check /></td>
               <td><Check /></td>
             </tr>
             <tr>
-              <td>Email Notifications</td>	
+              <td>Email Notifications <Tooltip>AiMS can email your helpdesk, engineers, contractors and clients and inform them of a new job that has been raised, Send notes or request updates to another users, Email an engineer’s time sheet electronically, allow clients to approve a quotation, send purchase orders to your suppliers. With a wide range of system email notifications to choose from and that will fall in line with your current business practices.</Tooltip></td>	
               <td><Check /></td>
               <td><Check /></td>
               <td><Check /></td>
             </tr>
             <tr>
-              <td>Cloud based Portal</td>
+              <td>Cloud based Portal <Tooltip>AiMS is a cloud based management system that allows any user to log into their portal from any location, Work remotely and have full access to your files and information.</Tooltip></td>
               <td><Check /></td>
               <td><Check /></td>
               <td><Check /></td>
             </tr>
             <tr>
-              <td>Compliance and PPM Management</td>
+              <td>Compliance and PPM Management <Tooltip>Keep track on with your compliance services and when the are due, Bulk log your compliance jobs to save time. All your compliance certificates in one place with easy access to find the information you require, when required.</Tooltip></td>
               <td><Check /></td>
               <td><Check /></td>
               <td><Check /></td>
             </tr>
             <tr>
-              <td>Work order Management</td>
+              <td>Work order Management <Tooltip>Stay in line with your current SLAs and Improve your business processes. AiMS enables you to streamline your jobs from start to finish with easy to use tools, filters and functions to keep on track of outstanding jobs.</Tooltip></td>
               <td><Check /></td>
               <td><Check /></td>
               <td><Check /></td>
             </tr>
             <tr>
-              <td>Quotations</td>
+              <td>Quotations <Tooltip>Create quotations and export them into a PDF format. Keep on track of what quotations have been approved or awaiting approval.  Easy to use format. Input material line items.  Allow your clients to review, approve quotations and speed up current processes with the client portal. Allow your contractor to submit quotations for review with the contractor panel.</Tooltip></td>
               <td><Check /></td>
               <td><Check /></td>
               <td><Check /></td>
             </tr>
             <tr>
-              <td>Job survey</td>
+              <td>Job survey <Tooltip>Carry out a site audit, inspections and surveys with an easy to use format making it quick and easy to carry out a report with descriptions and photos. Export the report to a PDF format or the report can be stored onto the AiMS system for safe keeping.</Tooltip></td>
               <td><Check /></td>
               <td><Check /></td>
               <td><Check /></td>
             </tr>
             <tr>
-              <td>Purchase orders</td> 	
+              <td>Purchase orders <Tooltip>Create Purchase orders and issue them to your suppliers via the AiMS portal or generate a PDF document. Manage your costs and stay in control with your material spend.</Tooltip></td> 	
               <td><Check /></td>
               <td><Check /></td>
               <td><Check /></td>
             </tr>
             <tr>
-              <td>Customised table view</td>
+              <td>Customised table view <Tooltip>AiMS allows the user to customise the jobs page to manage your outstanding works more efficiently with the table view. For example if you wanted to change your table view to show how many jobs are outstanding for each engineer, Project manager, Client, Discipline or Visit status.</Tooltip></td>
               <td><Check /></td>
               <td><Check /></td>
               <td><Check /></td>
             </tr>
             <tr>
-              <td>Engineers Mobile App</td>
+              <td>Engineers Mobile App <Tooltip>The engineer’s app has been designed to be simple and easy to use. Keep track of your engineers Check in and out times on site, take before and after pictures, View previous visit information and photos, Obtain an electronic signature for clients to sign of works and List materials use whilst on site. Electronic service sheets can be exported in a PDF format. 
+The engineers app always has a wide range of services to support your current business process, for example, your engineers can complete a vehicle condition report via the app to confirm the current status of a company vehicle, Request annual leave and view time sheets.</Tooltip></td>
               <td><Check /></td>
               <td><Check /></td>
               <td><Check /></td>
             </tr>
             <tr>
-              <td>Reporting</td>
+              <td>Reporting <Tooltip>Endless reporting to show the information you require. All reports can be exported to Excel.</Tooltip></td>
               <td><Check /></td>
               <td><Check /></td>
               <td><Check /></td>
             </tr>
             <tr>
-              <td>Unlimited File storage</td>
+              <td>Unlimited File storage <Tooltip>With AiMS there are no limits with endless file storage</Tooltip></td>
               <td><Check /></td>
               <td><Check /></td>
               <td><Check /></td>
@@ -147,19 +150,19 @@ export const PricingPageTemplate = ({
               <td><Check /></td>
             </tr>
             <tr>
-              <td>24/7 Technical Helpdesk support</td>	
+              <td>24/7 Technical Helpdesk support <Tooltip>Our AiMS Technical advisers are available 24/7 to provide help and support.</Tooltip></td>	
               <td><Check /></td>
               <td><Check /></td>
               <td><Check /></td>
             </tr>
             <tr>
-              <td>Client Portal</td>
+              <td>Client Portal <Tooltip>Allow your client to raised work orders, approve quotations, view the status of works orders and keep updated on outstanding jobs and compliance.</Tooltip></td>
               <td><Check /></td>
               <td><Check /></td>
               <td><Check /></td>
             </tr>
             <tr>
-              <td>Contractor Portal</td>
+              <td>Contractor Portal <Tooltip>Your contractors can access the portal to complete works orders, use the mobile app to check into sites and also invoice the jobs views the system speeding up time waiting for service reports and job updates.</Tooltip></td>
               <td></td>
               <td><Check /></td>
               <td><Check /></td>
@@ -171,19 +174,19 @@ export const PricingPageTemplate = ({
               <td><Check /></td>
             </tr>
             <tr>
-              <td>Time Sheet</td>
+              <td>Time Sheet <Tooltip>Aims uses the visit information to calculate a time sheet for your engineers, time sheets can be exported to a PDF format and emailed to your engineers.</Tooltip></td>
               <td></td>
               <td><Check /></td>
               <td><Check /></td>
             </tr>
             <tr>
-              <td>Materials and Equipment Inventory</td>
+              <td>Materials and Equipment Inventory <Tooltip>All your Materials/Stock in one place with the buy and sell prices. The inventory Integrates with the work orders job card to show material costs to help with managing your budget. Save time quoting by auto selecting your materials prices from the inventory. Manage your engineers materials with a clear visibility of what materials each engineers has on their Van stock. Keep track of materials stock count</Tooltip></td>
               <td></td>
               <td><Check /></td>
               <td><Check /></td>
             </tr>
             <tr>
-              <td>Unlimited Inventory Entrys</td>
+              <td>Unlimited Inventory Entrys <Tooltip>With AiMS there are no limits with endless Inventory items.</Tooltip></td>
               <td></td>
               <td><Check /></td>
               <td><Check /></td>

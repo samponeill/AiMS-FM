@@ -1,0 +1,56 @@
+.tooltip-container {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+}
+
+.tooltip-container button {
+    background: var(--darkGrey);
+    color: white;
+    position: relative;
+    padding: unset;
+    border: 1px solid white;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.5rem;
+}
+
+.tooltip-container > span {
+    background: white;
+    border: 1px solid var(--darkGrey);
+    color: var(--darkGrey);
+    position: absolute;
+    padding: 1rem;
+    font-size: 1rem;
+    left: 4rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 4;
+    font-weight: normal;
+    max-width: 46vw;
+    width: max-content;
+}
+
+.tooltip-container > span::after {
+    background: white;
+    border-left: 1px solid var(--darkGrey);
+    border-bottom: 1px solid var(--darkGrey);
+    color: var(--darkGrey);
+    content: '';
+    display: block;
+    width: 14px;
+    height: 14px;
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    left: -8px;
+}
+
+.tooltip-container .inactive {
+    display: none;
+}
+
+.tooltip-container .active {
+    display: block;
+}
