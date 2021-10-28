@@ -157,7 +157,7 @@ The engineers app always has a wide range of services to support your current bu
             </tr>
             <tr>
               <td>Client Portal <Tooltip>Allow your client to raised work orders, approve quotations, view the status of works orders and keep updated on outstanding jobs and compliance.</Tooltip></td>
-              <td><Check /></td>
+              <td></td>
               <td><Check /></td>
               <td><Check /></td>
             </tr>
