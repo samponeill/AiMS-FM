@@ -1,5 +1,5 @@
 siteTitle: AiMS FM | CAFM software
-siteUrl: https://yellowcake.netlify.com
+siteUrl: https://aimsfm.co.uk
 siteDescription: Fully customisable, cloud-based CAFM software for your property
   management system. Get a real-time overview of all maintenance work and
   associated costs, boost contractor response times and reduce risk with our
@@ -23,10 +23,11 @@ buckets:
     image: https://ucarecdn.com/356e5ff4-96ab-4314-8911-490677af65e2/
 testimonialsHeading: What our clients say
 testimonials:
-  - client: B. Feeter
+  - client: Tracy, Smoke Vent Limited
     image: https://ucarecdn.com/ed5c030c-d36a-456d-be62-70a146270c17/
     alt: Empty modern restaurant interior with blue chairs, dark wooden flooring and
       plenty of natural light
-    quote: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi
+    quote: We have been a customer of AiMS for over 3 years and we have always been
+      satisfied with the service we receive. The AiMS system helped us to
+      streamline the way we work. We are happy to have partnered with such a
+      forward thinking organisation.
